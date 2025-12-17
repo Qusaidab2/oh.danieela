@@ -1,100 +1,89 @@
-
 <!doctype html>
 <html lang="uk">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Спікерка — Даніела Денисівна</title>
-  <meta name="description" content="Про спікерку лекції та досвід у кондитерстві і маркетингу." />
+  <title>Про мене — Даніела Денисівна</title>
+  <meta name="description" content="Про спікерку, досвід і результати." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark"></span>
-        <span class="brand-text">
-          <span class="brand-title">DANIELA</span>
-          <span class="brand-sub">online lecture</span>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <span class="dot"></span>
+        <span class="logo-text">
+          <span class="logo-top">DANIELA</span>
+          <span class="logo-sub">online lecture</span>
         </span>
       </a>
       <nav class="nav">
+        <a class="active" href="about.html">Про мене</a>
         <a href="program.html">Програма</a>
-        <a class="active" href="about.html">Спікерка</a>
-        <a href="faq.html">Питання</a>
-        <a href="contact.html" class="nav-cta">Контакти</a>
+        <a href="faq.html">FAQ</a>
+        <a class="nav-cta" href="contact.html">Контакти</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container split">
+    <section class="page">
+      <div class="wrap page-grid">
         <div>
           <div class="kicker">АВТОРКА ТА СПІКЕРКА</div>
-          <h1>Даніела Денисівна</h1>
+          <h1 class="title">Даніела<br><span class="stroke">Денисівна</span></h1>
           <p class="lead">
             З 18 років стабільно заробляю на тортах, створивши унікальну кондитерську нового покоління.
-            Моя сила — поєднати продукт, естетику і маркетинг так, щоб замовляли саме у вас.
+            Тут буде не “мотивація”, а структура: продукт, позиціонування, контент і продажі.
           </p>
 
-          <div class="pill-row">
-            <span class="pill">5+ років досвіду</span>
-            <span class="pill">Маркетолог</span>
-            <span class="pill">Креативний директор</span>
+          <div class="tag-row">
+            <span class="tag">5+ років</span>
+            <span class="tag">маркетинг</span>
+            <span class="tag">креатив</span>
           </div>
 
-          <div class="page-actions">
-            <a class="btn btn-primary" href="https://YOUR-PAYMENT-LINK.example" target="_blank" rel="noopener">Оплатити 99 грн</a>
-            <a class="btn btn-ghost" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
+          <div class="two-actions">
+            <a class="btn primary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
+            <a class="btn ghost" href="program.html">Програма</a>
           </div>
         </div>
 
-        <aside class="frame tall">
-          <img src="assets/speaker.jpg" alt="Фото спікерки" />
+        <aside class="speaker">
+          <img src="assets/speaker.jpg" alt="Фото спікерки">
         </aside>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="grid-3">
-          <article class="card">
-            <h3>Довіра брендів</h3>
-            <p>Працювала з великими брендами та блогерами, які регулярно звертаються до нас.</p>
-          </article>
-          <article class="card">
-            <h3>Лідер ринку</h3>
-            <p>За 2 роки мій проєкт став лідером у своїй ніші.</p>
-          </article>
-          <article class="card">
-            <h3>Результати</h3>
-            <p>Маємо замовлення сумою 100 000 грн і систему, яка тримає стабільність.</p>
-          </article>
-        </div>
-
-        <div class="quote quote-wide">
-          <p>
-            «Я не вчу "гарно вести Instagram". Я вчу будувати таку подачу і процеси,
-            щоб клієнт хотів купити і повернутися».
-          </p>
-          <span class="quote-by">Даніела</span>
-        </div>
+      <div class="wrap cards">
+        <article class="card">
+          <div class="card-top"><span class="chip">01</span><h3>Довіра</h3></div>
+          <p>Здобула довіру брендів та блогерів, які регулярно звертаються.</p>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="chip">02</span><h3>Лідерство</h3></div>
+          <p>За 2 роки проєкт став лідером ринку у своїй категорії.</p>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="chip">03</span><h3>Результат</h3></div>
+          <p>Замовлення сумою 100 000 грн та система, яка тримає стабільність.</p>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="footer-brand">DANIELA • online lecture</div>
-        <div class="footer-micro">Україна • 2026</div>
+    <div class="wrap footer-inner">
+      <div class="foot-left">
+        <div class="foot-title">DANIELA • online lecture</div>
+        <div class="foot-sub">Україна • 2026</div>
       </div>
-      <div class="footer-right">
+      <div class="foot-right">
         <a href="index.html">Головна</a>
         <a href="program.html">Програма</a>
         <a href="faq.html">FAQ</a>
@@ -104,3 +93,4 @@
   </footer>
 </body>
 </html>
+
