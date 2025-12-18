@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Онлайн лекція | Шлях кондитера від 0 до 140.000₴</title>
-  <meta name="description" content="Онлайн лекція 13 січня о 19:00. Стратегія просування кондитера у 2026, помилки, тренди, бонуси та розбори. Реєстрація через Telegram." />
+  <meta name="description" content="Онлайн лекція 13 січня о 19:00. Стратегія 2026, помилки, тренди, бонуси та розбори. Реєстрація через Telegram." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <!-- Top bar -->
+  <!-- Topbar -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
@@ -20,9 +20,9 @@
         <span class="topbar-text">13 січня • 19:00 (Київ)</span>
       </div>
       <div class="topbar-right">
-        <a class="topbar-link" href="#program">Програма</a>
-        <a class="topbar-link" href="#speaker">Спікерка</a>
-        <a class="topbar-link" href="#faq">FAQ</a>
+        <a class="topbar-link" href="program.html">Програма</a>
+        <a class="topbar-link" href="faq.html">FAQ</a>
+        <a class="topbar-link" href="#telegram">Telegram</a>
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#">
+      <a class="brand" href="index.html">
         <div class="brand-mark">D</div>
         <div class="brand-text">
           <div class="brand-title">ДАНІЕЛА</div>
@@ -42,7 +42,7 @@
         <a href="#about">Про лекцію</a>
         <a href="#forwhom">Для кого</a>
         <a href="#results">Результат</a>
-        <a href="#how">Як потрапити</a>
+        <a href="#telegram">Реєстрація</a>
       </nav>
 
       <a class="btn btn-primary" href="#telegram">Перейти в Telegram</a>
@@ -54,17 +54,17 @@
 
     <div id="mobileMenu" class="mobile-menu" hidden>
       <a href="#about">Про лекцію</a>
-      <a href="#program">Програма</a>
       <a href="#forwhom">Для кого</a>
-      <a href="#speaker">Спікерка</a>
-      <a href="#faq">FAQ</a>
+      <a href="#results">Результат</a>
+      <a href="program.html">Програма</a>
+      <a href="faq.html">FAQ</a>
       <a class="btn btn-primary mobile-cta" href="#telegram">Перейти в Telegram</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
+  <!-- HERO (background pic1.png) -->
+  <section class="hero hero-photo">
+    <div class="hero-overlay" aria-hidden="true"></div>
 
     <div class="container hero-grid">
       <div class="hero-content">
@@ -78,27 +78,15 @@
         </p>
 
         <div class="hero-badges">
-          <div class="badge">
-            <div class="badge-title">Дата</div>
-            <div class="badge-value">13 січня</div>
-          </div>
-          <div class="badge">
-            <div class="badge-title">Час</div>
-            <div class="badge-value">19:00 (Київ)</div>
-          </div>
-          <div class="badge">
-            <div class="badge-title">Тривалість</div>
-            <div class="badge-value">2–2,5 години</div>
-          </div>
-          <div class="badge">
-            <div class="badge-title">Формат</div>
-            <div class="badge-value">Telegram</div>
-          </div>
+          <div class="badge"><div class="badge-title">Дата</div><div class="badge-value">13 січня</div></div>
+          <div class="badge"><div class="badge-title">Час</div><div class="badge-value">19:00</div></div>
+          <div class="badge"><div class="badge-title">Тривалість</div><div class="badge-value">2–2,5 години</div></div>
+          <div class="badge"><div class="badge-title">Формат</div><div class="badge-value">Telegram</div></div>
         </div>
 
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" href="#telegram">Зареєструватись в Telegram</a>
-          <a class="btn btn-ghost btn-lg" href="#price">Дізнатись умови</a>
+          <a class="btn btn-ghost btn-lg" href="program.html">Подивитись програму</a>
         </div>
 
         <div class="hero-note">
@@ -107,20 +95,11 @@
       </div>
 
       <div class="hero-card">
-        <div class="hero-card-media">
-          <!-- Replace with your image: assets/hero.jpg -->
-          <img src="assets/hero.jpg" alt="Десерти та атмосфера кондитерської" onerror="this.style.display='none'; this.parentElement.classList.add('media-fallback');" />
-          <div class="media-fallback-text">
-            Додайте зображення: <strong>assets/hero.jpg</strong><br />
-            Формат: 1400×1800 або вище
-          </div>
-        </div>
-
         <div class="hero-card-body" id="price">
           <div class="price-row">
             <div class="price-left">
               <div class="price-label">Реєстрація</div>
-              <div class="price-title">Встигніть за спеціальною ціною</div>
+              <div class="price-title">Спеціальна ціна</div>
             </div>
             <div class="price-right">
               <div class="price-old">399 грн</div>
@@ -129,10 +108,10 @@
           </div>
 
           <ul class="checklist">
-            <li>Стратегія просування та розвитку персонального бренду кондитера</li>
+            <li>Стратегія просування та персональний бренд</li>
             <li>Критичні помилки кондитерів і як їх уникнути</li>
-            <li>Тренди 2026 та система дій, що веде до продажів</li>
-            <li>Бонуси, живі розбори учасників</li>
+            <li>Тренди 2026 та система дій до продажів</li>
+            <li>Бонуси та живі розбори учасників</li>
           </ul>
 
           <a class="btn btn-primary btn-full" href="#telegram">Перейти в Telegram та оплатити</a>
@@ -142,444 +121,136 @@
     </div>
   </section>
 
-  <!-- Proof -->
-  <section class="strip">
-    <div class="container strip-grid">
-      <div class="strip-item">
-        <div class="strip-number">100.000 грн</div>
-        <div class="strip-text">замовлення сумою</div>
-      </div>
-      <div class="strip-item">
-        <div class="strip-number">2 роки</div>
-        <div class="strip-text">до лідерства ринку</div>
-      </div>
-      <div class="strip-item">
-        <div class="strip-number">5 років</div>
-        <div class="strip-text">досвіду в проєкті</div>
-      </div>
-      <div class="strip-item">
-        <div class="strip-number">2026</div>
-        <div class="strip-text">стратегія під нову реальність</div>
-      </div>
-    </div>
-  </section>
+  <!-- WHITE separator after hero -->
+  <section class="white-break"></section>
 
-  <!-- About -->
-  <section id="about" class="section">
+  <!-- About (dark) -->
+  <section id="about" class="section section-dark">
     <div class="container">
       <div class="section-head">
         <h2 class="h2">Поки у інших низький чек і немає замовлень</h2>
         <p class="p">
-          Ви отримаєте чітку карту дій на 2026 рік, щоб вас помічали, вам довіряли і хотіли замовляти саме у вас.
-          Це не мотивація. Це система.
+          Ви отримаєте карту дій на 2026 рік, щоб вас помічали, довіряли вам і хотіли замовляти саме у вас.
         </p>
       </div>
 
       <div class="cards-3">
         <article class="card">
           <div class="icon">📌</div>
-          <h3>Персональний бренд кондитера</h3>
+          <h3>Персональний бренд</h3>
           <p>Як упакувати себе так, щоб за ваш стиль платили більше.</p>
         </article>
         <article class="card">
           <div class="icon">⚠️</div>
-          <h3>Критичні помилки</h3>
+          <h3>Помилки</h3>
           <p>Що вбиває продажі, навіть якщо ви готуєте ідеально.</p>
         </article>
         <article class="card">
-          <div class="icon">🚀</div>
-          <h3>Алгоритм дій</h3>
-          <p>6 кроків, які приводять до замовлень і росту без життя на кухні.</p>
+          <div class="icon">🧩</div>
+          <h3>Система</h3>
+          <p>6 кроків, які приводять до замовлень без життя на кухні.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- For whom -->
-  <section id="forwhom" class="section section-alt">
+  <!-- WHITE background section -->
+  <section class="section section-white" id="forwhom">
     <div class="container">
       <div class="split">
         <div>
-          <h2 class="h2">Вам потрібен інтенсив, якщо ви</h2>
-          <p class="p">Вже заробляєте або тільки плануєте заробляти на тортах.</p>
+          <h2 class="h2 dark">Вам потрібен інтенсив, якщо ви</h2>
+          <p class="p dark-muted">Вже заробляєте або тільки плануєте заробляти на тортах.</p>
 
-          <div class="chips">
-            <span class="chip">Кондитер новачок</span>
-            <span class="chip">Кондитер у наймі</span>
-            <span class="chip">Кондитер підприємець</span>
+          <div class="chips light">
+            <span class="chip light">Кондитер новачок</span>
+            <span class="chip light">Кондитер у наймі</span>
+            <span class="chip light">Кондитер підприємець</span>
           </div>
 
-          <div class="goals">
-            <h3 class="h3">Щось із цього ваша ціль?</h3>
-            <ul class="bullets">
-              <li>Монетизувати своє хобі</li>
-              <li>Стати лідером ринку</li>
-              <li>Стратегічно просувати бренд</li>
-              <li>Впорядкувати процеси і заробляти більше</li>
-              <li>Заробляти так, щоб не думати про іншу роботу</li>
-              <li>Відкрити свою унікальність і зробити солдаут</li>
-            </ul>
-          </div>
+          <h3 class="h3 dark">Цілі</h3>
+          <ul class="bullets dark-muted">
+            <li>Монетизувати своє хобі</li>
+            <li>Стати лідером ринку</li>
+            <li>Впорядкувати процеси і заробляти більше</li>
+            <li>Зробити солдаут через свою унікальність</li>
+          </ul>
 
           <a class="btn btn-primary" href="#telegram">Займайте своє місце</a>
         </div>
 
-        <div class="visual">
-          <div class="visual-card">
-            <div class="visual-top">
-              <div class="visual-kicker">Бонус одразу після оплати</div>
-              <div class="visual-title">«Конспект лекції»</div>
-              <div class="visual-text">Готова структура, щоб ви не губили головне.</div>
+        <div class="white-card">
+          <div class="white-card-top">
+            <div class="white-kicker">Бонус одразу</div>
+            <div class="white-title">«Конспект лекції»</div>
+            <div class="white-text">Готова структура, щоб ви не губили головне.</div>
+          </div>
+          <div class="white-card-bottom">
+            <div class="mini lightbox">
+              <div class="mini-title dark">Бонус онлайн</div>
+              <div class="mini-text dark-muted">Рецепт ваніль&ягоди + гайд по насадкам (ламбет)</div>
             </div>
-            <div class="visual-bottom">
-              <div class="mini">
-                <div class="mini-title">Бонус за присутність онлайн</div>
-                <div class="mini-text">Рецепт торту ваніль&ягоди + гайд по насадкам для декору ламбет</div>
-              </div>
-              <div class="mini">
-                <div class="mini-title">Запис</div>
-                <div class="mini-text">Доступ 14 днів</div>
-              </div>
+            <div class="mini lightbox">
+              <div class="mini-title dark">Запис</div>
+              <div class="mini-text dark-muted">Доступ 14 днів</div>
             </div>
           </div>
-          <div class="visual-note">Зображення можна додати як <strong>assets/bg1.jpg</strong> у CSS (не обовʼязково).</div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Program -->
-  <section id="program" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="h2">Програма лекції</h2>
-        <p class="p">13 січня • 19:00 (Київ) • 2–2,5 години</p>
-      </div>
+  <!-- WHITE break -->
+  <section class="white-break"></section>
 
-      <div class="timeline">
-        <div class="step">
-          <div class="step-dot"></div>
-          <div class="step-body">
-            <h3>Тренди 2026</h3>
-            <p>Що чекає на кондитерів у новому році і як зайняти сильну позицію.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot"></div>
-          <div class="step-body">
-            <h3>Таємниця успішних кондитерів</h3>
-            <p>Як стати лідером ринку і чому ті, хто почне зараз, мають більше шансів.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot"></div>
-          <div class="step-body">
-            <h3>Алгоритм з 6 дій</h3>
-            <p>Які конкретні кроки приводять до продажів і як будувати систему замовлень.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot"></div>
-          <div class="step-body">
-            <h3>Відкриття продажів на курс</h3>
-            <p>«Твій перший торт, який захочуть знову» + найкращі умови та додаткові бонуси.</p>
-          </div>
-        </div>
-
-        <div class="step">
-          <div class="step-dot"></div>
-          <div class="step-body">
-            <h3>Бонуси та розбори</h3>
-            <p>Живі розбори учасників, презентації-шпаргалки, інтерактив у боті.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Results -->
-  <section id="results" class="section section-alt">
+  <!-- Results (dark) -->
+  <section id="results" class="section section-dark">
     <div class="container">
       <div class="section-head">
         <h2 class="h2">В результаті за лекцію ви</h2>
-        <p class="p">Зберете ясність, структуру і нові інструменти, які економлять час і підсилюють продажі.</p>
+        <p class="p">Зберете ясність, структуру і інструменти, які економлять час і підсилюють продажі.</p>
       </div>
 
       <div class="cards-2">
         <article class="card card-wide">
-          <h3>Розуміння трендів і позиціонування</h3>
+          <h3>Розуміння трендів</h3>
           <ul class="checklist">
-            <li>Освоїте тренди 2026 і зрозумієте, як виділятися</li>
-            <li>Побачите, що реально зупиняє ріст і як це прибрати</li>
-            <li>Розберетесь, як заробляти через блог у новій реальності</li>
+            <li>Зрозумієте тренди 2026 і як виділятися</li>
+            <li>Побачите, що зупиняє ріст і як це прибрати</li>
+            <li>Дізнаєтесь, як заробляти через блог</li>
           </ul>
         </article>
 
         <article class="card card-wide">
-          <h3>Система дій і сильні умови</h3>
+          <h3>Система та бонуси</h3>
           <ul class="checklist">
-            <li>Дізнаєтесь критичні помилки і як їх уникати</li>
-            <li>Отримаєте маленькі зміни в процесах, що економлять час</li>
-            <li>Отримаєте найкращі умови на курс та додаткові бонуси</li>
+            <li>Зрозумієте критичні помилки і рішення</li>
+            <li>Отримаєте зміни в процесах, що економлять час</li>
+            <li>Кращі умови на курс + додаткові бонуси</li>
           </ul>
         </article>
       </div>
-
-      <div class="extras">
-        <div class="extra">
-          <div class="extra-title">Сертифікат</div>
-          <div class="extra-text">про присутність на лекції</div>
-        </div>
-        <div class="extra">
-          <div class="extra-title">Нетворкінг</div>
-          <div class="extra-text">додатковий Telegram-канал</div>
-        </div>
-        <div class="extra">
-          <div class="extra-title">Запис</div>
-          <div class="extra-text">доступ 14 днів</div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Speaker -->
-  <section id="speaker" class="section">
+  <!-- WHITE section: CTA -->
+  <section class="section section-white" id="telegram">
     <div class="container">
-      <div class="speaker">
-        <div class="speaker-photo">
-          <img src="assets/speaker.jpg" alt="Даніела Денисівна" onerror="this.style.display='none'; this.parentElement.classList.add('media-fallback');" />
-          <div class="media-fallback-text">
-            Додайте фото: <strong>assets/speaker.jpg</strong><br />
-            Портрет 1000×1200 або вище
-          </div>
+      <div class="cta-white">
+        <div>
+          <h2 class="h2 dark">Реєстрація в один клік</h2>
+          <p class="p dark-muted">Перейдіть у Telegram-бот, натисніть Старт, оплатіть 99 грн і одразу отримайте доступ.</p>
         </div>
 
-        <div class="speaker-info">
-          <div class="kicker">Авторка та спікерка інтенсиву</div>
-          <h2 class="h2">Даніела Денисівна</h2>
-          <p class="p">
-            Я розповім, як вирости кондитеру від 0 до стабільного високого доходу, створити впізнаваний бренд
-            і виділятися серед сотень кондитерів. Покажу як налаштовувати систему роботи та отримувати більше клієнтів і замовлень, витрачаючи менше часу.
-          </p>
-
-          <div class="facts">
-            <div class="fact">
-              <div class="fact-title">Досвід</div>
-              <div class="fact-text">5 років у проєкті, бізнес вумен</div>
-            </div>
-            <div class="fact">
-              <div class="fact-title">Ролі</div>
-              <div class="fact-text">Маркетолог та креативний директор</div>
-            </div>
-            <div class="fact">
-              <div class="fact-title">Довіра</div>
-              <div class="fact-text">Великі бренди та блогери</div>
-            </div>
-            <div class="fact">
-              <div class="fact-title">Результат</div>
-              <div class="fact-text">Лідер ринку за 2 роки</div>
-            </div>
-          </div>
-
-          <a class="btn btn-primary" href="#telegram">Реєстрація в Telegram</a>
-        </div>
+        <!-- Replace Telegram link -->
+        <a class="btn btn-primary btn-lg" href="https://t.me/your_bot_or_channel" target="_blank" rel="noopener">
+          Відкрити Telegram
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="h2">Що кажуть мої учні</h2>
-        <p class="p">Поставте реальні відгуки пізніше. Тут уже готовий блок.</p>
-      </div>
-
-      <div class="quotes">
-        <figure class="quote">
-          <blockquote>“Це було дуже структуровано. Нарешті зрозуміла, що робити, щоб замовлення стали стабільними.”</blockquote>
-          <figcaption>Анастасія, кондитер</figcaption>
-        </figure>
-
-        <figure class="quote">
-          <blockquote>“Після лекції я змінила упаковку профілю і підняла чек. Люди реально почали питати про замовлення.”</blockquote>
-          <figcaption>Марина, домашня кондитерка</figcaption>
-        </figure>
-
-        <figure class="quote">
-          <blockquote>“Найцінніше це система. Я перестала жити на кухні і почала працювати як бренд.”</blockquote>
-          <figcaption>Ірина, підприємець</figcaption>
-        </figure>
-      </div>
-
-      <div class="video-block" id="how">
-        <div class="video-card">
-          <div class="video-head">
-            <h3 class="h3">Як проходить інтенсив</h3>
-            <p class="p">Вставте відео з Instagram або YouTube, або залиште як є.</p>
-          </div>
-          <div class="video-embed">
-            <!-- Replace this iframe src -->
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Як проходить інтенсив"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-
-          <a class="btn btn-primary btn-full" href="#telegram">Я з вами</a>
-        </div>
-
-        <div class="steps-card">
-          <h3 class="h3">Як взяти участь</h3>
-          <ol class="list-steps">
-            <li>Перейдіть в Telegram-бот</li>
-            <li>Натисніть кнопку Старт</li>
-            <li>Дотримуйтеся інструкції в чаті та оплатіть 99 грн</li>
-            <li>Готово. Вам автоматично прийде доступ до каналу інтенсиву</li>
-          </ol>
-
-          <div class="info-box">
-            <div class="info-title">Після оплати</div>
-            <div class="info-text">Одразу доступ до каналу + бонусний файл «Конспект лекції».</div>
-          </div>
-
-          <a class="btn btn-ghost btn-full" href="#faq">Ще залишилися сумніви</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Doubts -->
-  <section class="section">
-    <div class="container">
-      <div class="doubts">
-        <div class="doubts-left">
-          <h2 class="h2">Якщо залишилися сумніви</h2>
-          <p class="p">Ці думки знайомі багатьом. І саме вони тримають на місці.</p>
-
-          <div class="two-col">
-            <div class="mini-card">
-              <div class="mini-title">Страхи</div>
-              <ul class="bullets">
-                <li>Я вже проґавила шанс, пізно починати</li>
-                <li>З мене будуть сміятися</li>
-                <li>У мене не “інстаграмна” кухня</li>
-                <li>Тут не можна нормально заробити</li>
-                <li>Я не хочу когось удавати</li>
-                <li>Конкуренція занадто велика</li>
-              </ul>
-            </div>
-
-            <div class="mini-card">
-              <div class="mini-title">Реальність</div>
-              <ul class="bullets">
-                <li>Найчастіше людям байдуже. Близькі раді нашим успіхам</li>
-                <li>Є багато способів створювати контент без ідеальної кухні</li>
-                <li>Тут багато грошей і клієнтів, якщо є система</li>
-                <li>Не потрібно удавати. Потрібна стратегія</li>
-                <li>У 2026 виграють ті, хто починає правильно</li>
-              </ul>
-            </div>
-          </div>
-
-          <a class="btn btn-primary" href="#telegram">Реєстрація в один клік</a>
-        </div>
-
-        <div class="doubts-right" id="telegram">
-          <div class="cta-card">
-            <div class="cta-kicker">Готові до нової реальності?</div>
-            <h3 class="cta-title">Перейдіть в Telegram</h3>
-            <p class="cta-text">
-              Зареєструйтесь, дотримуйтеся інструкції в боті та отримайте доступ одразу після оплати.
-            </p>
-
-            <!-- Replace this link with the real Telegram bot/channel -->
-            <a class="btn btn-primary btn-full" href="https://t.me/your_bot_or_channel" target="_blank" rel="noopener">
-              Відкрити Telegram
-            </a>
-
-            <div class="microtext">
-              Якщо у вас залишились питання, напишіть “Питання” у Telegram і вам допоможуть.
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="cta-mini">
-              <div class="cta-mini-title">Ціна зараз</div>
-              <div class="cta-mini-value"><span class="old">399</span> <span class="new">99 грн</span></div>
-            </div>
-            <div class="cta-mini">
-              <div class="cta-mini-title">Запис</div>
-              <div class="cta-mini-value">14 днів</div>
-            </div>
-            <div class="cta-mini">
-              <div class="cta-mini-title">Формат</div>
-              <div class="cta-mini-value">Telegram канал + бот</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="h2">Є питання?</h2>
-        <p class="p">Найчастіші запитання перед участю.</p>
-      </div>
-
-      <div class="faq">
-        <details class="faq-item" open>
-          <summary>Якщо я вже давно в кондитерстві?</summary>
-          <div class="faq-body">
-            Збагатіть свій досвід, подивіться на знайомі речі під іншим кутом, отримаєте нові інструменти під тренди 2026 і потрапите в правильне оточення з нетворкінгом.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>А якщо я взагалі нічого не тямлю в кондитерстві?</summary>
-          <div class="faq-body">
-            Вам буде зрозуміла вся інформація. Дізнаєтесь основи маркетингу, як стартувати у 2026 році та які “правила гри”, а також як адаптувати стратегію під себе.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Якщо я не зможу бути онлайн?</summary>
-          <div class="faq-body">
-            Буде запис з доступом на 14 днів.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Як буде проходити інтенсив?</summary>
-          <div class="faq-body">
-            Вся інформація в закритому Telegram-каналі та в чат-боті.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>У мене залишились питання</summary>
-          <div class="faq-body">
-            Напишіть у Telegram, і вам із задоволенням допоможуть.
-          </div>
-        </details>
-      </div>
-
-      <div class="final-cta">
-        <h3 class="h3">Питань немає, я готовий до нової реальності</h3>
-        <a class="btn btn-primary btn-lg" href="#telegram">Перейти в Telegram</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-left">
@@ -594,19 +265,16 @@
       </div>
 
       <div class="footer-right">
-        <a class="footer-link" href="#program">Програма</a>
-        <a class="footer-link" href="#speaker">Спікерка</a>
-        <a class="footer-link" href="#faq">FAQ</a>
+        <a class="footer-link" href="program.html">Програма</a>
+        <a class="footer-link" href="faq.html">FAQ</a>
         <a class="btn btn-ghost" href="#telegram">Telegram</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Mobile menu
     const burger = document.querySelector(".burger");
     const menu = document.getElementById("mobileMenu");
 
@@ -617,7 +285,6 @@
       else menu.setAttribute("hidden", "");
     });
 
-    // Close menu when clicking a link
     menu.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => {
         burger.setAttribute("aria-expanded", "false");
