@@ -3,105 +3,138 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Програма — Daniella</title>
-  <meta name="description" content="Програма онлайн лекції для кондитерів." />
+  <title>Програма | Онлайн лекція</title>
+  <meta name="description" content="Програма онлайн лекції для кондитерів. Тренди 2026, алгоритм дій, бонуси та розбори." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-  <input type="checkbox" id="menuToggle" aria-label="Open menu">
-  <label class="menuBtn" for="menuToggle" aria-label="Menu"><span></span></label>
-  <label class="overlay" for="menuToggle" aria-hidden="true"></label>
-
-  <aside class="drawer" aria-label="Navigation">
-    <div class="drawerTop">
-      <div class="brand">
-        <div class="mark"></div>
-        <div class="brandText">
-          <b>DANIELA</b>
-          <span>online lecture • 2026</span>
-        </div>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span class="pill">Програма</span>
+        <span class="topbar-text">13 січня • 19:00 (Київ)</span>
       </div>
-      <label class="closeBtn" for="menuToggle" aria-label="Close">✕</label>
+      <div class="topbar-right">
+        <a class="topbar-link" href="index.html">Головна</a>
+        <a class="topbar-link" href="faq.html">FAQ</a>
+        <a class="topbar-link" href="index.html#telegram">Telegram</a>
+      </div>
     </div>
+  </div>
 
-    <nav class="drawerNav">
-      <a href="index.html">Головна</a>
-      <a href="program.html">Програма</a>
-      <a href="pricing.html">Оплата</a>
-    </nav>
-
-    <div class="drawerBottom">
-      <a class="btn btnGold btnFull" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
-      <a class="btn btnFull" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">D</div>
+        <div class="brand-text">
+          <div class="brand-title">ДАНІЕЛА</div>
+          <div class="brand-subtitle">Інтенсив для кондитерів</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#plan">План</a>
+        <a href="#bonuses">Бонуси</a>
+        <a href="index.html#telegram">Реєстрація</a>
+      </nav>
+      <a class="btn btn-primary" href="index.html#telegram">Перейти в Telegram</a>
     </div>
-  </aside>
+  </header>
 
-  <section class="hero heroSmall" style="--hero-bg: url('assets/hero-program.png');">
-    <div class="container heroInner">
-      <div class="heroCard">
-        <div class="kicker">ПРОГРАМА</div>
-        <h1>2–2,5 години</h1>
-        <p class="heroSummary">Тренди 2026 • продажі • бренд • бонуси</p>
-        <div class="row">
-          <a class="btn btnGold" href="pricing.html">Оплата</a>
-          <a class="btn" href="index.html">На головну</a>
+  <section class="hero hero-photo hero-small">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-grid hero-grid-single">
+      <div class="hero-content">
+        <h1 class="hero-title">Програма лекції</h1>
+        <p class="hero-subtitle">
+          13 січня • 19:00 (Київ) • тривалість 2–2,5 години • формат Telegram
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="index.html#telegram">Зареєструватись</a>
+          <a class="btn btn-ghost btn-lg" href="index.html">Назад на головну</a>
         </div>
       </div>
     </div>
   </section>
 
-  <main class="main">
-    <section class="panel">
-      <div class="container panelInner">
-        <div class="panelHead">
-          <h2>Що буде</h2>
-          <p>Коротко і по суті: система, яка робить вас помітними і продає.</p>
-        </div>
+  <section class="white-break"></section>
 
-        <div class="hr"></div>
-
-        <p>
-          • Тренди 2026 і як під них адаптувати блог<br>
-          • Критичні помилки, що зупиняють продажі<br>
-          • Алгоритм кроків до заявок і повторних замовлень<br>
-          • Бонуси та живі розбори
-        </p>
-
-        <div class="row">
-          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
-          <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Питання в Telegram</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footerTop">
-      <div>
-        <div class="footerBrand">
-          <div class="mark"></div>
-          <div>
-            <b>DANIELA • ONLINE LECTURE</b>
-            <small>Україна • 2026</small>
-          </div>
-        </div>
-        <div class="footerMeta">
-          <span>Запис 14 днів</span>
-          <span>99 грн</span>
-        </div>
+  <section id="plan" class="section section-dark">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">План</h2>
+        <p class="p">Чітко, по справі, без води. Те, що реально рухає продажі.</p>
       </div>
 
-      <div class="footerLinks">
-        <a href="index.html">Головна</a>
-        <a href="pricing.html">Оплата</a>
+      <div class="timeline">
+        <div class="step"><div class="step-dot"></div><div class="step-body"><h3>Тренди 2026</h3><p>Що чекає на кондитерів у новому році та як зайняти сильну позицію.</p></div></div>
+        <div class="step"><div class="step-dot"></div><div class="step-body"><h3>Таємниця успішних кондитерів</h3><p>Як стати лідером ринку і чому ті, хто почне зараз, мають більше шансів.</p></div></div>
+        <div class="step"><div class="step-dot"></div><div class="step-body"><h3>Алгоритм з 6 дій</h3><p>Конкретні кроки, які приводять до продажів і стабільності.</p></div></div>
+        <div class="step"><div class="step-dot"></div><div class="step-body"><h3>Відкриття продажів на курс</h3><p>«Твій перший торт, який захочуть знову» + найкращі умови.</p></div></div>
       </div>
     </div>
+  </section>
 
-    <div class="container footerBottom">
-      <small>© 2026 • Усі права захищено</small>
+  <section class="section section-white" id="bonuses">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2 dark">Бонуси та додатково</h2>
+        <p class="p dark-muted">Те, що ви отримаєте зверху, якщо будете з нами.</p>
+      </div>
+
+      <div class="cards-3 light-grid">
+        <article class="card light-card">
+          <div class="icon light-ico">🎁</div>
+          <h3 class="dark">Бонус онлайн</h3>
+          <p class="dark-muted">Рецепт торту ваніль&ягоди + гайд по насадкам ламбет.</p>
+        </article>
+        <article class="card light-card">
+          <div class="icon light-ico">📜</div>
+          <h3 class="dark">Сертифікат</h3>
+          <p class="dark-muted">Про присутність на лекції.</p>
+        </article>
+        <article class="card light-card">
+          <div class="icon light-ico">🧠</div>
+          <h3 class="dark">Матеріали</h3>
+          <p class="dark-muted">Презентації, шпаргалки, інтерактив у боті.</p>
+        </article>
+      </div>
+
+      <div class="cta-white" style="margin-top:16px;">
+        <div>
+          <h3 class="h3 dark">Готові?</h3>
+          <p class="p dark-muted">Оплата 99 грн через Telegram-бот. Доступ автоматично.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="index.html#telegram">Перейти в Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-mark small">D</span>
+          <div>
+            <div class="footer-title">Даніела Денисівна</div>
+            <div class="footer-sub">Онлайн лекція для кондитерів</div>
+          </div>
+        </div>
+        <div class="footer-copy">© <span id="year"></span> Всі права захищені</div>
+      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="index.html">Головна</a>
+        <a class="footer-link" href="faq.html">FAQ</a>
+        <a class="btn btn-ghost" href="index.html#telegram">Telegram</a>
+      </div>
     </div>
   </footer>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
