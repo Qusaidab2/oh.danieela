@@ -4,24 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Program — Daniella</title>
-  <meta name="description" content="Програма лекції: тренди 2026, помилки, алгоритм продажів." />
+  <meta name="description" content="Програма лекції: тренди 2026, критичні помилки, алгоритм продажів." />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <input type="checkbox" id="navToggle" aria-label="Open menu">
   <label class="dimmer" for="navToggle" aria-hidden="true"></label>
 
-  <aside class="drawer" aria-label="Mobile menu">
+  <aside class="drawer" aria-label="Menu">
     <div class="drawerTop">
-      <div class="brand" style="justify-content:flex-start">
-        <div class="logoMark"></div>
+      <div class="brand">
+        <div class="mark"></div>
         <div class="brandText">
-          <b>DANIELA</b>
+          <strong>DANIELA</strong>
           <span>visual lecture • 2026</span>
         </div>
       </div>
-      <label class="x" for="navToggle" aria-label="Close menu">✕</label>
+      <label class="closeBtn" for="navToggle" aria-label="Close">✕</label>
     </div>
 
     <nav class="drawerNav">
@@ -30,123 +30,103 @@
       <a href="pricing.html">Оплата</a>
     </nav>
 
-    <div class="drawerCTAs">
-      <a class="btn btnHot btnFull" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Придбати доступ</a>
-      <a class="btn btnFull" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
-      <a class="btn btnFull" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
+    <div class="drawerBottom">
+      <a class="btn btnPrimary btnFull" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Придбати доступ</a>
+      <a class="btn btnSoft btnFull" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
     </div>
   </aside>
 
-  <header class="topbar">
-    <div class="wrap nav">
-      <label class="burger" for="navToggle" aria-label="Open menu">
-        <i></i><i></i><i></i>
-      </label>
+  <header class="header">
+    <div class="container headerInner">
+      <a class="brand" href="index.html">
+        <div class="mark"></div>
+        <div class="brandText">
+          <strong>DANIELA</strong>
+          <span>Program</span>
+        </div>
+      </a>
 
-      <nav class="links" aria-label="Desktop navigation">
+      <nav class="navLinks">
         <a href="index.html">Home</a>
         <a href="program.html">Program</a>
         <a href="pricing.html">Pricing</a>
       </nav>
 
-      <a class="brand" href="index.html" aria-label="Daniella home">
-        <div class="logoMark"></div>
-        <div class="brandText">
-          <b>DANIELA</b>
-          <span>Program</span>
-        </div>
-      </a>
-
-      <div class="actions">
-        <a class="btn btnSmall btnGhost" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">IG</a>
-        <a class="btn btnSmall btnHot" href="pricing.html">99₴</a>
+      <div class="headerActions">
+        <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">TG</a>
+        <a class="btn btnPrimary" href="pricing.html">99₴</a>
+        <label class="burger" for="navToggle" aria-label="Menu"><span></span></label>
       </div>
     </div>
   </header>
 
   <main>
     <section class="section">
-      <div class="wrap">
+      <div class="container">
         <div class="kicker">ПРОГРАМА</div>
-        <h1 class="h1">2–2,5 години концентрату</h1>
-        <p class="sub">Структура лекції побудована так, щоб ви одразу могли застосувати її в продажах та блозі.</p>
+        <h1>2–2,5 години структури</h1>
+        <p>План лекції побудований так, щоб ви одразу могли застосувати його в блозі та продажах.</p>
 
         <div class="timeline">
-          <div class="card step">
+          <div class="step">
             <div class="num">01</div>
             <div>
-              <h3>Позиціювання та “дорога” упаковка</h3>
-              <p>Як виділятися серед сотень кондитерів і підняти чек без страху.</p>
+              <h3>Позиціювання та чек</h3>
+              <p>Як перейти з “дешево” до “цінно”, щоб вас обирали і повертались.</p>
             </div>
           </div>
 
-          <div class="card step">
+          <div class="step">
             <div class="num">02</div>
             <div>
               <h3>Тренди 2026</h3>
-              <p>Що реально працює в контенті, як виглядати актуально та сильно.</p>
+              <p>Які формати працюють зараз: подача, контент-ритм, довіра.</p>
             </div>
           </div>
 
-          <div class="card step">
+          <div class="step">
             <div class="num">03</div>
             <div>
               <h3>Критичні помилки</h3>
-              <p>Що вбиває продажі і як це виправити без “жити на кухні”.</p>
+              <p>Що забирає час, але не приносить замовлень. Як це виправити.</p>
             </div>
           </div>
 
-          <div class="card step stepHot">
+          <div class="step stepHot">
             <div class="num">04</div>
             <div>
               <h3>Алгоритм продажів (6 кроків)</h3>
-              <p>Від уваги → довіра → заявка → переписка → оплата → повтор.</p>
+              <p>Увага → довіра → заявка → переписка → оплата → повтор.</p>
             </div>
           </div>
         </div>
 
-        <div class="ctaRow" style="margin-top:14px">
-          <a class="btn btnHot" href="pricing.html">Перейти до оплати</a>
-          <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Поставити питання</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap grid2">
-        <div class="heroMedia">
-          <img src="assets/pic2.jpg" alt="Visual">
+        <div class="chips">
+          <span class="chip">Бонуси</span>
+          <span class="chip chipGlow">Живі розбори</span>
+          <span class="chip">Матеріали</span>
         </div>
 
-        <div class="card pad">
-          <div class="kicker">БОНУСИ</div>
-          <h2 class="h2">Подарунок + живі розбори</h2>
-          <p class="sub">Після участі ви отримуєте бонуси, практичні матеріали та (за форматом) живі розбори.</p>
-
-          <div style="display:grid; gap:10px; margin-top:12px">
-            <div class="feature"><div class="badge"></div><div><b>Конспект лекції</b><p>щоб нічого не втратити.</p></div></div>
-            <div class="feature"><div class="badge"></div><div><b>Матеріали</b><p>шпаргалки + інструкції.</p></div></div>
-            <div class="feature"><div class="badge"></div><div><b>Підтримка</b><p>відповіді на питання в Telegram.</p></div></div>
-          </div>
+        <div class="heroRow">
+          <a class="btn btnPrimary" href="pricing.html">Перейти до оплати</a>
+          <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Поставити питання</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap foot">
+  <footer class="footer">
+    <div class="container footerInner">
       <div>
         <b>DANIELA • Visual Lecture</b>
         <small>© 2026 • Україна</small>
       </div>
-
-      <div class="footLinks">
+      <div class="footerLinks">
         <a href="index.html">Home</a>
         <a href="pricing.html">Оплата</a>
-        <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
-        <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
       </div>
     </div>
   </footer>
+
 </body>
 </html>
