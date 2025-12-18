@@ -12,13 +12,13 @@
 </head>
 
 <body>
-  <!-- Side menu (CSS-only) -->
-  <input class="nav-toggle" type="checkbox" id="navToggle" aria-label="Open menu">
+  <!-- Drawer toggle -->
+  <input type="checkbox" id="navToggle" aria-label="Open menu">
 
-  <!-- Page dimmer (click closes menu) -->
+  <!-- Dimmer closes drawer -->
   <label class="dimmer" for="navToggle" aria-hidden="true"></label>
 
-  <!-- Sliding drawer -->
+  <!-- Drawer -->
   <aside class="drawer" aria-label="Menu">
     <div class="drawer-top">
       <div class="drawer-brand">
@@ -32,13 +32,10 @@
     </div>
 
     <nav class="drawer-links">
-      <a href="#top" onclick="this.blur()">Головна</a>
-      <a href="#gallery" onclick="this.blur()">Галерея</a>
-      <a href="#about" onclick="this.blur()">Про лекцію</a>
-      <a href="#program" onclick="this.blur()">Програма</a>
-      <a href="#pricing" onclick="this.blur()">Ціна</a>
-      <a href="#faq" onclick="this.blur()">FAQ</a>
-      <a href="#contact" onclick="this.blur()">Контакти</a>
+      <a href="index.html">Головна</a>
+      <a href="program.html">Програма</a>
+      <a href="pricing.html">Ціна</a>
+      <a href="contact.html">Контакти</a>
     </nav>
 
     <div class="drawer-cta">
@@ -53,16 +50,15 @@
   </aside>
 
   <!-- Header -->
-  <header class="top" id="top">
+  <header class="top">
     <div class="wrap top-inner">
-      <!-- Neat almost-invisible menu button -->
       <label class="menu-btn" for="navToggle" aria-label="Open menu">
         <span class="menu-dot"></span>
         <span class="menu-dot"></span>
         <span class="menu-dot"></span>
       </label>
 
-      <a class="top-brand" href="#top" aria-label="Home">
+      <a class="top-brand" href="index.html" aria-label="Home">
         <span class="top-title">Шлях кондитера</span>
         <span class="top-sub">онлайн лекція • 13 січня • 19:00</span>
       </a>
@@ -74,14 +70,13 @@
     </div>
   </header>
 
-  <!-- HERO (image in the middle) -->
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="wrap hero-inner">
-
         <div class="hero-copy">
           <div class="chips">
-            <span class="chip">2–2,5 години</span>
+            <span class="chip">13 січня • 19:00</span>
             <span class="chip">Запис 14 днів</span>
             <span class="chip hot">99 грн</span>
           </div>
@@ -98,61 +93,66 @@
 
           <div class="hero-cta">
             <a class="btn primary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити та зайняти місце</a>
-            <a class="btn ghost" href="#about">Дивитись програму</a>
+            <a class="btn ghost" href="program.html">Дивитись програму</a>
           </div>
         </div>
 
         <div class="hero-media">
-          <img src="assets/pic1.png" alt="Hero image" />
+          <img src="assets/pic1.jpg" alt="Hero image" />
           <div class="hero-glow" aria-hidden="true"></div>
         </div>
-
       </div>
     </section>
 
-    <!-- GALLERY: 3 pics tap-to-zoom (no new page, just overlay via :target) -->
-    <section class="section" id="gallery">
+    <!-- Gallery zoom (checkbox lightbox) -->
+    <section class="section">
       <div class="wrap">
         <div class="section-head">
           <h2 class="h2">Візуали</h2>
-          <p class="sub">Натисніть на фото, щоб збільшити (особливо з телефону).</p>
+          <p class="sub">Натисніть на фото, щоб збільшити (відкривається поверх сторінки).</p>
         </div>
 
+        <!-- Lightbox toggles -->
+        <input class="lb-toggle" type="checkbox" id="lb1">
+        <input class="lb-toggle" type="checkbox" id="lb2">
+        <input class="lb-toggle" type="checkbox" id="lb3">
+
         <div class="gallery">
-          <a class="gcard" href="#img1" aria-label="Open image 1">
-            <img src="assets/pic5.jfif" alt="Gallery 1">
-          </a>
-          <a class="gcard" href="#img2" aria-label="Open image 2">
+          <label class="gcard" for="lb1" aria-label="Open image 1">
+            <img src="assets/pic2.jpg" alt="Gallery 1">
+          </label>
+          <label class="gcard" for="lb2" aria-label="Open image 2">
             <img src="assets/pic3.jpg" alt="Gallery 2">
-          </a>
-          <a class="gcard" href="#img3" aria-label="Open image 3">
-            <img src="assets/pic4.png" alt="Gallery 3">
-          </a>
+          </label>
+          <label class="gcard" for="lb3" aria-label="Open image 3">
+            <img src="assets/pic4.jpg" alt="Gallery 3">
+          </label>
         </div>
+
+        <!-- Overlays -->
+        <div class="lightbox lb1" aria-hidden="true">
+          <label class="lb-close" for="lb1" aria-label="Close">✕</label>
+          <label class="lb-bg" for="lb1" aria-hidden="true"></label>
+          <img class="lb-img" src="assets/pic2.jpg" alt="Zoomed image 1">
+        </div>
+
+        <div class="lightbox lb2" aria-hidden="true">
+          <label class="lb-close" for="lb2" aria-label="Close">✕</label>
+          <label class="lb-bg" for="lb2" aria-hidden="true"></label>
+          <img class="lb-img" src="assets/pic3.jpg" alt="Zoomed image 2">
+        </div>
+
+        <div class="lightbox lb3" aria-hidden="true">
+          <label class="lb-close" for="lb3" aria-label="Close">✕</label>
+          <label class="lb-bg" for="lb3" aria-hidden="true"></label>
+          <img class="lb-img" src="assets/pic4.jpg" alt="Zoomed image 3">
+        </div>
+
       </div>
     </section>
 
-    <!-- Lightbox overlays (CSS-only) -->
-    <div class="lightbox" id="img1" aria-label="Image viewer">
-      <a class="lb-close" href="#gallery" aria-label="Close">✕</a>
-      <a class="lb-bg" href="#gallery" aria-hidden="true"></a>
-      <img class="lb-img" src="assets/pic2.jpg" alt="Zoomed image 1">
-    </div>
-
-    <div class="lightbox" id="img2" aria-label="Image viewer">
-      <a class="lb-close" href="#gallery" aria-label="Close">✕</a>
-      <a class="lb-bg" href="#gallery" aria-hidden="true"></a>
-      <img class="lb-img" src="assets/pic3.jpg" alt="Zoomed image 2">
-    </div>
-
-    <div class="lightbox" id="img3" aria-label="Image viewer">
-      <a class="lb-close" href="#gallery" aria-label="Close">✕</a>
-      <a class="lb-bg" href="#gallery" aria-hidden="true"></a>
-      <img class="lb-img" src="assets/pic4.jpg" alt="Zoomed image 3">
-    </div>
-
-    <!-- ABOUT (document stuff) -->
-    <section class="section" id="about">
+    <!-- About / document content -->
+    <section class="section">
       <div class="wrap">
         <div class="split">
           <div class="panel">
@@ -168,182 +168,40 @@
           </div>
 
           <div class="panel soft">
-            <div class="kicker">СПІКЕРКА</div>
-            <h3 class="h3">Даніела Денисівна</h3>
-            <p class="p">
-              Кондитерка та маркетолог. Допомагаю збудувати впізнаваний бренд і систему замовлень,
-              щоб заробляти більше, витрачаючи менше часу.
+            <div class="kicker">ШВИДКИЙ СТАРТ</div>
+            <h2 class="h2">Куди далі?</h2>
+            <p class="lead">
+              Перейдіть на сторінку програми, або одразу бронюйте місце.
             </p>
-            <div class="facts">
-              <div class="fact">
-                <div class="fbig">5+</div>
-                <div class="fsmall">років досвіду</div>
-              </div>
-              <div class="fact">
-                <div class="fbig">100K</div>
-                <div class="fsmall">сума замовлень</div>
-              </div>
-              <div class="fact">
-                <div class="fbig">2026</div>
-                <div class="fsmall">фокус на тренди</div>
-              </div>
+            <div class="hero-cta" style="margin-top:12px">
+              <a class="btn primary" href="pricing.html">Дивитись ціну</a>
+              <a class="btn ghost" href="contact.html">Задати питання</a>
             </div>
+            <p class="sub" style="margin-top:10px">
+              Після оплати ви одразу отримаєте інструкції та доступ.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROGRAM -->
-    <section class="section" id="program">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="h2">Програма лекції</h2>
-          <p class="sub">13 січня • 19:00 (Київ) • тривалість: 2–2,5 години</p>
-        </div>
-
-        <div class="timeline">
-          <div class="t">
-            <div class="tn">01</div>
-            <div>
-              <div class="tt">Як монетизувати улюблену справу</div>
-              <div class="tx">Позиціювання, упаковка, пропозиція і логіка ціни.</div>
-            </div>
-          </div>
-
-          <div class="t">
-            <div class="tn">02</div>
-            <div>
-              <div class="tt">Тренди 2026</div>
-              <div class="tx">Що працює у контенті та продажах для кондитерів у новому році.</div>
-            </div>
-          </div>
-
-          <div class="t">
-            <div class="tn">03</div>
-            <div>
-              <div class="tt">Алгоритм із 6 покрокових дій</div>
-              <div class="tx">Дії, які приводять до замовлень через Instagram трафік.</div>
-            </div>
-          </div>
-
-          <div class="t highlight">
-            <div class="tn">BONUS</div>
-            <div>
-              <div class="tt">Бонус за присутність онлайн</div>
-              <div class="tx">Рецепт торту ваніль&ягоди + гайд по насадкам для трендового декору.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="section" id="pricing">
-      <div class="wrap">
-        <div class="price">
-          <div class="price-left">
-            <div class="kicker">СПЕЦЦІНА</div>
-            <h2 class="h2">99 грн</h2>
-            <p class="sub">Замість 399 грн. Після оплати ви одразу отримаєте бонус «Конспект лекції».</p>
-
-            <div class="price-cta">
-              <a class="btn primary btn-full" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
-              <a class="btn ghost btn-full" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Оплата через Telegram</a>
-            </div>
-
-            <div class="fine">
-              Є питання? Напишіть у Telegram: <a href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">команда турботи</a>
-            </div>
-          </div>
-
-          <div class="price-right">
-            <div class="steps">
-              <div class="kicker">ЯК ВЗЯТИ УЧАСТЬ</div>
-              <ol>
-                <li>Перейдіть в телеграм-бот</li>
-                <li>Натисніть кнопку Start</li>
-                <li>Оплатіть 99 грн</li>
-                <li>Отримайте доступ автоматично</li>
-              </ol>
-            </div>
-            <div class="mini-card">
-              <div class="mini-title">Входить</div>
-              <ul>
-                <li>Лекція 2–2,5 години</li>
-                <li>Запис 14 днів</li>
-                <li>Бонуси</li>
-                <li>Сертифікат</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="h2">FAQ</h2>
-          <p class="sub">Коротко і по суті.</p>
-        </div>
-
-        <div class="faq">
-          <details class="faq-item" open>
-            <summary>Як буде проходити лекція?</summary>
-            <p>Онлайн. Після оплати приходить доступ і інструкції. Далі — Telegram-канал.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Якщо я не зможу бути онлайн?</summary>
-            <p>Буде запис з доступом на 14 днів.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>А якщо я новачок?</summary>
-            <p>Підійде. Ви отримаєте базу маркетингу + план старту в 2026.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Куди писати з питаннями?</summary>
-            <p>У Telegram: <a href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">команда турботи</a></p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="wrap contact">
-        <div class="contact-card">
-          <h2 class="h2">Готові до нової реальності?</h2>
-          <p class="sub">Реєструйтесь в один клік і забирайте бонус.</p>
-          <div class="contact-cta">
-            <a class="btn primary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
-            <a class="btn ghost" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div class="foot-left">
+      <div>
         <div class="foot-brand">DANIELA • Online Lecture</div>
         <div class="foot-sub">© 2026 • Україна • Всі права захищені</div>
       </div>
 
       <div class="foot-links">
+        <a href="program.html">Програма</a>
+        <a href="pricing.html">Ціна</a>
+        <a href="contact.html">Контакти</a>
         <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">Instagram</a>
         <a href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
-        <a href="#top">Вгору</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Договір оферта</a>
       </div>
     </div>
   </footer>
-
 </body>
 </html>
