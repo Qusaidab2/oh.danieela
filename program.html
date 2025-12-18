@@ -3,130 +3,86 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Program — Daniella</title>
-  <meta name="description" content="Програма лекції: тренди 2026, критичні помилки, алгоритм продажів." />
+  <title>Оплата — Daniella</title>
+  <meta name="description" content="Оплата участі: 99 грн замість 399 грн." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <input type="checkbox" id="navToggle" aria-label="Open menu">
-  <label class="dimmer" for="navToggle" aria-hidden="true"></label>
+  <input type="checkbox" id="themeToggle" aria-label="Toggle theme">
 
-  <aside class="drawer" aria-label="Menu">
-    <div class="drawerTop">
-      <div class="brand">
-        <div class="mark"></div>
-        <div class="brandText">
-          <strong>DANIELA</strong>
-          <span>visual lecture • 2026</span>
+  <div class="page">
+    <header class="header">
+      <div class="container headerInner">
+        <a class="logo" href="index.html">
+          <div class="mark"></div>
+          <div class="logoText">
+            <strong>DANIELA</strong>
+            <span>Оплата</span>
+          </div>
+        </a>
+
+        <nav class="navPill" aria-label="Navigation">
+          <a href="index.html">Головна</a>
+          <a href="program.html">Програма</a>
+          <a href="pricing.html">Оплата</a>
+        </nav>
+
+        <div class="headerRight">
+          <a class="btn btnSoft" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btnPrimary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
+          <label class="themeBtn" for="themeToggle" title="Theme">☼</label>
         </div>
       </div>
-      <label class="closeBtn" for="navToggle" aria-label="Close">✕</label>
-    </div>
+    </header>
 
-    <nav class="drawerNav">
-      <a href="index.html">Головна</a>
-      <a href="program.html">Програма</a>
-      <a href="pricing.html">Оплата</a>
-    </nav>
+    <main>
+      <section class="section">
+        <div class="container split">
+          <div class="card pad">
+            <div class="kicker">СПЕЦЦІНА</div>
+            <h1>99 грн</h1>
+            <p>Замість 399 грн. Після оплати ви отримаєте інструкцію та бонусні матеріали.</p>
 
-    <div class="drawerBottom">
-      <a class="btn btnPrimary btnFull" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Придбати доступ</a>
-      <a class="btn btnSoft btnFull" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
-    </div>
-  </aside>
+            <div class="hr"></div>
 
-  <header class="header">
-    <div class="container headerInner">
-      <a class="brand" href="index.html">
-        <div class="mark"></div>
-        <div class="brandText">
-          <strong>DANIELA</strong>
-          <span>Program</span>
-        </div>
-      </a>
-
-      <nav class="navLinks">
-        <a href="index.html">Home</a>
-        <a href="program.html">Program</a>
-        <a href="pricing.html">Pricing</a>
-      </nav>
-
-      <div class="headerActions">
-        <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">TG</a>
-        <a class="btn btnPrimary" href="pricing.html">99₴</a>
-        <label class="burger" for="navToggle" aria-label="Menu"><span></span></label>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="kicker">ПРОГРАМА</div>
-        <h1>2–2,5 години структури</h1>
-        <p>План лекції побудований так, щоб ви одразу могли застосувати його в блозі та продажах.</p>
-
-        <div class="timeline">
-          <div class="step">
-            <div class="num">01</div>
-            <div>
-              <h3>Позиціювання та чек</h3>
-              <p>Як перейти з “дешево” до “цінно”, щоб вас обирали і повертались.</p>
+            <div class="list">
+              <div class="item"><b>Лекція</b><p>2–2,5 години по суті.</p></div>
+              <div class="item"><b>Запис</b><p>Доступ 14 днів.</p></div>
+              <div class="item"><b>Матеріали</b><p>Конспект та бонуси.</p></div>
             </div>
+
+            <div class="row" style="margin-top:16px">
+              <a class="btn btnPrimary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
+              <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Потрібна допомога</a>
+            </div>
+
+            <div class="hr"></div>
+
+            <p style="color:var(--muted)">
+              Якщо оплата не проходить, напишіть у Telegram і вам підкажуть.
+            </p>
           </div>
 
-          <div class="step">
-            <div class="num">02</div>
-            <div>
-              <h3>Тренди 2026</h3>
-              <p>Які формати працюють зараз: подача, контент-ритм, довіра.</p>
-            </div>
-          </div>
-
-          <div class="step">
-            <div class="num">03</div>
-            <div>
-              <h3>Критичні помилки</h3>
-              <p>Що забирає час, але не приносить замовлень. Як це виправити.</p>
-            </div>
-          </div>
-
-          <div class="step stepHot">
-            <div class="num">04</div>
-            <div>
-              <h3>Алгоритм продажів (6 кроків)</h3>
-              <p>Увага → довіра → заявка → переписка → оплата → повтор.</p>
-            </div>
+          <div class="heroMedia">
+            <img src="assets/pic2.jpg" alt="Payment visual">
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="chips">
-          <span class="chip">Бонуси</span>
-          <span class="chip chipGlow">Живі розбори</span>
-          <span class="chip">Матеріали</span>
+    <footer class="footer">
+      <div class="container footerInner">
+        <div>
+          <b>DANIELA • Online Lecture</b>
+          <small>© 2026 • Україна</small>
         </div>
-
-        <div class="heroRow">
-          <a class="btn btnPrimary" href="pricing.html">Перейти до оплати</a>
-          <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Поставити питання</a>
+        <div class="footerLinks">
+          <a href="program.html">Програма</a>
+          <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Support</a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footerInner">
-      <div>
-        <b>DANIELA • Visual Lecture</b>
-        <small>© 2026 • Україна</small>
-      </div>
-      <div class="footerLinks">
-        <a href="index.html">Home</a>
-        <a href="pricing.html">Оплата</a>
-      </div>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 </html>
