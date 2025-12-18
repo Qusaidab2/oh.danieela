@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Daniella — Онлайн лекція для кондитерів</title>
+  <title>Daniella — Онлайн лекція</title>
   <meta name="description" content="Онлайн лекція для кондитерів України: стратегія, бренд, продажі у 2026." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Slide menu (no JS) -->
+  <!-- Drawer menu (no JS) -->
   <input type="checkbox" id="menuToggle" aria-label="Open menu">
   <label class="menuBtn" for="menuToggle" aria-label="Menu"><span></span></label>
   <label class="overlay" for="menuToggle" aria-hidden="true"></label>
@@ -39,61 +39,57 @@
     </div>
   </aside>
 
-  <!-- HERO (big) -->
+  <!-- Hero background pic -->
   <section class="hero heroBig" style="--hero-bg: url('assets/pic1.png');">
     <div class="container heroInner">
-      <div class="heroCard heroCardTight">
+      <div class="heroCard">
         <div class="kicker">ОНЛАЙН ЛЕКЦІЯ</div>
         <h1>Шлях кондитера<br>від 0 до 140 000₴</h1>
 
         <p class="heroSummary">
-          Стратегія просування у 2026, сильний бренд, вищий чек, більше замовлень з Instagram.
+          Стратегія просування у 2026. Бренд, вищий чек, заявки з Instagram. Коротко, по суті, без води.
         </p>
 
         <div class="meta">
           <span class="tag">13 січня • 19:00 (Київ)</span>
           <span class="tag">Запис 14 днів</span>
-          <span class="tag">Доступ одразу</span>
+          <span class="tag">Оплата 99 грн</span>
         </div>
 
         <div class="row">
-          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
-          <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Реєстрація в Telegram</a>
+          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
+          <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram бот</a>
         </div>
       </div>
     </div>
   </section>
 
-  <main class="whiteGaps">
-
-    <!-- SHORT TEXT (few words only) -->
+  <main class="main">
+    <!-- Short summary panel -->
     <section class="panel">
       <div class="container panelInner">
-        <div class="panelMini">
+        <div class="panelHead">
           <h2>Коротко про лекцію</h2>
-          <p>
-            Без зайвої роботи “на кухні”. Ви отримаєте чіткий план: як виділятися, продавати дорожче,
-            і мати стабільні замовлення.
-          </p>
+          <p>Як стати помітною, продавати дорожче і мати стабільні замовлення у 2026.</p>
         </div>
       </div>
     </section>
 
-    <!-- AUTO SLIDING GALLERY (CSS only) -->
+    <!-- Carousel panel -->
     <section class="panel">
       <div class="container panelInner">
         <div class="panelHead">
           <h2>Галерея</h2>
-          <p>Візуальний стиль. Три кадри, що плавно змінюються.</p>
+          <p>Три кадри. Плавний авто-слайд. Без кліків.</p>
         </div>
 
-        <div class="carousel" aria-label="Gallery carousel">
+        <div class="carousel">
           <div class="track">
             <div class="slide"><img src="assets/pic2.png" alt="Gallery 1"></div>
             <div class="slide"><img src="assets/pic3.png" alt="Gallery 2"></div>
             <div class="slide"><img src="assets/pic4.png" alt="Gallery 3"></div>
 
-            <!-- duplicated for seamless loop -->
+            <!-- duplicates for loop -->
             <div class="slide"><img src="assets/pic2.png" alt="Gallery 1 duplicate"></div>
             <div class="slide"><img src="assets/pic3.png" alt="Gallery 2 duplicate"></div>
             <div class="slide"><img src="assets/pic4.png" alt="Gallery 3 duplicate"></div>
@@ -102,53 +98,52 @@
       </div>
     </section>
 
-    <!-- ONE MORE IMAGE -->
+    <!-- Extra image + CTA -->
     <section class="panel">
       <div class="container panelInner">
         <div class="panelHead">
-          <h2>Додатковий кадр</h2>
-          <p>Місце для вашого найсильнішого фото (довіра, продукт, авторка).</p>
+          <h2>Ще один візуал</h2>
+          <p>Місце для найсильнішого фото (довіра, продукт, авторка).</p>
         </div>
 
         <div class="featureImg">
           <img src="assets/pic5.png" alt="Feature">
         </div>
 
-        <div class="row" style="margin-top:14px">
-          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
-          <a class="btn" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Перейти в Instagram</a>
+        <div class="row">
+          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
+          <a class="btn" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="footerPro">
-    <div class="container footerInnerPro">
-      <div class="footLeft">
-        <div class="footBrand">
+  <footer class="footer">
+    <div class="container footerTop">
+      <div>
+        <div class="footerBrand">
           <div class="mark"></div>
           <div>
-            <b>DANIELA</b>
-            <small>Online lecture • Україна • 2026</small>
+            <b>DANIELA • ONLINE LECTURE</b>
+            <small>Україна • 2026</small>
           </div>
         </div>
-        <div class="footMeta">
+        <div class="footerMeta">
           <span>13 січня • 19:00</span>
           <span>Запис 14 днів</span>
           <span>Оплата 99 грн</span>
         </div>
       </div>
 
-      <div class="footRight">
-        <a class="footLink" href="program.html">Програма</a>
-        <a class="footLink" href="pricing.html">Оплата</a>
-        <a class="footLink" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
-        <a class="footLink" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
+      <div class="footerLinks">
+        <a href="program.html">Програма</a>
+        <a href="pricing.html">Оплата</a>
+        <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
+        <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
 
-    <div class="container footBottom">
+    <div class="container footerBottom">
       <small>© 2026 • Усі права захищено</small>
     </div>
   </footer>
