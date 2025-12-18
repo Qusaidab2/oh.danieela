@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Оплата — Daniella</title>
-  <meta name="description" content="Оплата участі: 99 грн замість 399 грн. Доступ одразу після оплати." />
+  <meta name="description" content="Оплата участі: 99 грн. Доступ одразу після оплати." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -37,12 +37,12 @@
     </div>
   </aside>
 
-  <section class="hero" style="min-height: 56vh;">
+  <section class="hero heroSmall" style="--hero-bg: url('assets/hero-pricing.png');">
     <div class="container heroInner">
-      <div class="heroCard pad">
+      <div class="heroCard">
         <div class="kicker">ОПЛАТА</div>
-        <h1 class="heroTitle">99 грн</h1>
-        <p class="heroSub">Замість 399 грн. Доступ та бонуси одразу після оплати.</p>
+        <h1>99 грн</h1>
+        <p class="heroSummary">Доступ + бонуси одразу після оплати</p>
         <div class="row">
           <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
           <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Потрібна допомога</a>
@@ -51,42 +51,54 @@
     </div>
   </section>
 
-  <main>
-    <section class="section">
-      <div class="container split">
-        <div class="card pad">
-          <h2>Що ви отримаєте</h2>
-          <p>Лекція 2–2,5 години, запис на 14 днів, матеріали і бонуси.</p>
-          <div class="hr"></div>
-          <p>
-            Після оплати ви переходите в Telegram і отримуєте інструкцію.
-            Якщо щось не працює, підтримка відповість у Telegram.
-          </p>
+  <main class="main">
+    <section class="panel">
+      <div class="container panelInner">
+        <div class="panelHead">
+          <h2>Як це працює</h2>
+          <p>3 кроки: оплатіть → отримайте інструкцію → зайдіть у Telegram канал.</p>
         </div>
 
-        <div class="card pad">
-          <h2>Як це працює</h2>
-          <p>1) Натисніть “Оплатити”. 2) Завершіть платіж. 3) Отримайте доступ.</p>
-          <div class="hr"></div>
-          <div class="row">
-            <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
-            <a class="btn" href="index.html">На головну</a>
-          </div>
+        <div class="hr"></div>
+
+        <p>
+          1) Натисніть “Оплатити”.<br>
+          2) Завершіть платіж.<br>
+          3) Вам прийде доступ та інструкція.
+        </p>
+
+        <div class="row">
+          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
+          <a class="btn" href="index.html">На головну</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footerInner">
+    <div class="container footerTop">
       <div>
-        <b>DANIELA • ONLINE LECTURE</b>
-        <small>© 2026 • Україна</small>
+        <div class="footerBrand">
+          <div class="mark"></div>
+          <div>
+            <b>DANIELA • ONLINE LECTURE</b>
+            <small>Україна • 2026</small>
+          </div>
+        </div>
+        <div class="footerMeta">
+          <span>Оплата 99 грн</span>
+          <span>Запис 14 днів</span>
+        </div>
       </div>
+
       <div class="footerLinks">
         <a href="program.html">Програма</a>
         <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Support</a>
       </div>
+    </div>
+
+    <div class="container footerBottom">
+      <small>© 2026 • Усі права захищено</small>
     </div>
   </footer>
 
