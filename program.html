@@ -4,109 +4,127 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Програма — Онлайн лекція</title>
-  <meta name="description" content="Програма лекції, бонуси, результат." />
+  <meta name="description" content="Програма лекції: тренди 2026, помилки, алгоритм продажів." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="wrap header-inner">
-      <a class="logo" href="index.html">
-        <span class="dot"></span>
-        <span class="logo-text">
-          <span class="logo-top">DANIELA</span>
-          <span class="logo-sub">online lecture</span>
-        </span>
+  <input type="checkbox" id="navToggle" aria-label="Open menu">
+  <label class="dimmer" for="navToggle" aria-hidden="true"></label>
+
+  <aside class="drawer" aria-label="Menu">
+    <div class="drawer-top">
+      <div class="drawer-brand">
+        <span class="mark">●</span>
+        <div><div class="bname">DANIELA</div><div class="bsub">online lecture • 2026</div></div>
+      </div>
+      <label class="drawer-close" for="navToggle" aria-label="Close menu">✕</label>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html">Головна</a>
+      <a href="program.html">Програма</a>
+      <a href="pricing.html">Ціна</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+    <div class="drawer-cta">
+      <a class="btn primary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
+      <a class="btn ghost" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
+    </div>
+    <div class="drawer-mini">
+      <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Support</a>
+    </div>
+  </aside>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <label class="menu-btn" for="navToggle" aria-label="Open menu">
+        <span class="menu-dot"></span><span class="menu-dot"></span><span class="menu-dot"></span>
+      </label>
+      <a class="top-brand" href="index.html">
+        <span class="top-title">Програма</span>
+        <span class="top-sub">13 січня • 19:00 • 2–2,5 години</span>
       </a>
-      <nav class="nav">
-        <a href="about.html">Про мене</a>
-        <a class="active" href="program.html">Програма</a>
-        <a href="faq.html">FAQ</a>
-        <a class="nav-cta" href="contact.html">Контакти</a>
-      </nav>
+      <div class="top-actions">
+        <a class="mini" href="pricing.html">₴</a>
+        <a class="mini" href="contact.html">?</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="page">
-      <div class="wrap">
-        <div class="kicker">13 січня • 19:00 (Київ) • 2–2,5 години</div>
-        <h1 class="title">Програма<br><span class="stroke">лекції</span></h1>
-        <p class="lead">Стисла, сильна, без зайвого. Після неї буде чітко: що робити далі.</p>
-
-        <div class="two-actions">
-          <a class="btn primary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
-          <a class="btn ghost" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
-        </div>
-      </div>
-    </section>
-
     <section class="section">
-      <div class="wrap timeline">
-        <div class="t-item">
-          <span class="chip">01</span>
-          <div>
-            <h3>Тренди 2026</h3>
-            <p>Що працює для кондитерів у новому році, коли увага стала дорожчою.</p>
-          </div>
+      <div class="wrap">
+        <div class="section-head">
+          <h1 class="h1">Програма лекції</h1>
+          <p class="sub">Структурно, по суті, без «води». Ідеально під Instagram трафік.</p>
         </div>
-        <div class="t-item">
-          <span class="chip">02</span>
-          <div>
-            <h3>Таємниця успішних</h3>
-            <p>Як стати лідером ринку та чому у тих, хто почне зараз, більше шансів.</p>
-          </div>
-        </div>
-        <div class="t-item">
-          <span class="chip">03</span>
-          <div>
-            <h3>6 кроків до продажів</h3>
-            <p>Алгоритм дій, який приводить до клієнтів і замовлень.</p>
-          </div>
-        </div>
-        <div class="t-item">
-          <span class="chip">04</span>
-          <div>
-            <h3>Бонуси + розбори</h3>
-            <p>Живі розбори учасників та бонус за присутність онлайн.</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="wrap cards">
-        <article class="card">
-          <div class="card-top"><span class="chip">BONUS</span><h3>За онлайн присутність</h3></div>
-          <p>Рецепт “ваніль&ягоди” + гайд по насадкам для декору “ламбет”.</p>
-        </article>
-        <article class="card">
-          <div class="card-top"><span class="chip">ACCESS</span><h3>Запис 14 днів</h3></div>
-          <p>Сертифікат, презентації-шпаргалки, додатковий канал з нетворкінгом.</p>
-        </article>
-        <article class="card">
-          <div class="card-top"><span class="chip">NEXT</span><h3>Найкращі умови</h3></div>
-          <p>Спеціальні умови на курс “Твій перший торт, який захочуть знову”.</p>
-        </article>
+        <div class="timeline">
+          <div class="t">
+            <div class="tn">01</div>
+            <div>
+              <div class="tt">Як монетизувати улюблену справу</div>
+              <div class="tx">Позиціювання, упаковка, пропозиція, логіка ціни.</div>
+            </div>
+          </div>
+
+          <div class="t">
+            <div class="tn">02</div>
+            <div>
+              <div class="tt">Тренди 2026</div>
+              <div class="tx">Що працює в контенті, як виглядати “новим поколінням”.</div>
+            </div>
+          </div>
+
+          <div class="t">
+            <div class="tn">03</div>
+            <div>
+              <div class="tt">Критичні помилки кондитерів</div>
+              <div class="tx">Що з’їдає час і не дає грошей, і як це виправити.</div>
+            </div>
+          </div>
+
+          <div class="t">
+            <div class="tn">04</div>
+            <div>
+              <div class="tt">Алгоритм з 6 покрокових дій</div>
+              <div class="tx">Від перегляду → до заявки → до повторного замовлення.</div>
+            </div>
+          </div>
+
+          <div class="t highlight">
+            <div class="tn">BONUS</div>
+            <div>
+              <div class="tt">Бонус за присутність онлайн</div>
+              <div class="tx">Рецепт ваніль&ягоди + гайд по насадкам для декору.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta" style="margin-top:14px">
+          <a class="btn primary" href="pricing.html">Дивитись ціну</a>
+          <a class="btn ghost" href="index.html">Назад</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div class="foot-left">
-        <div class="foot-title">DANIELA • online lecture</div>
-        <div class="foot-sub">Україна • 2026</div>
+      <div>
+        <div class="foot-brand">DANIELA • Online Lecture</div>
+        <div class="foot-sub">© 2026 • Україна</div>
       </div>
-      <div class="foot-right">
+      <div class="foot-links">
         <a href="index.html">Головна</a>
-        <a href="about.html">Про мене</a>
-        <a href="faq.html">FAQ</a>
+        <a href="pricing.html">Ціна</a>
         <a href="contact.html">Контакти</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
-
