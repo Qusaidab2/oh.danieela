@@ -9,145 +9,155 @@
 </head>
 <body>
 
-  <!-- CSS-only theme toggle (per page) -->
-  <input type="checkbox" id="themeToggle" aria-label="Toggle theme">
+  <!-- Menu system (no JS) -->
+  <input type="checkbox" id="menuToggle" aria-label="Open menu">
+  <label class="menuBtn" for="menuToggle" aria-label="Menu"><span></span></label>
+  <label class="overlay" for="menuToggle" aria-hidden="true"></label>
 
-  <div class="page">
-    <header class="header">
-      <div class="container headerInner">
-        <a class="logo" href="index.html">
-          <div class="mark"></div>
-          <div class="logoText">
-            <strong>DANIELA</strong>
-            <span>13 січня • 19:00 • Київ</span>
-          </div>
-        </a>
-
-        <nav class="navPill" aria-label="Navigation">
-          <a href="index.html">Головна</a>
-          <a href="program.html">Програма</a>
-          <a href="pricing.html">Оплата</a>
-        </nav>
-
-        <div class="headerRight">
-          <a class="btn btnSoft" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
-          <a class="btn btnPrimary" href="pricing.html">99₴</a>
-          <label class="themeBtn" for="themeToggle" title="Theme">☼</label>
+  <aside class="drawer" aria-label="Navigation">
+    <div class="drawerTop">
+      <div class="brand">
+        <div class="mark"></div>
+        <div class="brandText">
+          <b>DANIELA</b>
+          <span>online lecture • 2026</span>
         </div>
       </div>
-    </header>
+      <label class="closeBtn" for="menuToggle" aria-label="Close">✕</label>
+    </div>
 
-    <main>
-      <section class="section">
-        <div class="container hero">
-          <div class="heroBox">
-            <div class="heroBoxInner">
-              <div class="kicker">ОНЛАЙН ЛЕКЦІЯ</div>
-              <h1>Шлях кондитера від 0 до 140 000₴</h1>
-              <p>
-                Більше робити ≠ більше заробляти. На лекції ви отримаєте систему просування,
-                яка робить вас помітними у 2026 році і приводить замовлення з Instagram.
-              </p>
+    <nav class="drawerNav">
+      <a href="index.html">Головна</a>
+      <a href="program.html">Програма</a>
+      <a href="pricing.html">Оплата</a>
+    </nav>
 
-              <div class="heroMeta">
-                <span class="tag">2–2,5 години</span>
-                <span class="tag">Запис 14 днів</span>
-                <span class="tag">Бонус одразу</span>
-              </div>
+    <div class="drawerBottom">
+      <a class="btn btnGold btnFull" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Придбати доступ</a>
+      <a class="btn btnFull" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn btnFull" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </aside>
 
-              <div class="row" style="margin-top:16px">
-                <a class="btn btnPrimary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Придбати доступ</a>
-                <a class="btn" href="program.html">Дивитись програму</a>
-                <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
-              </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container heroInner">
+      <div class="heroCard pad">
+        <div class="kicker">ОНЛАЙН ЛЕКЦІЯ</div>
+        <h1 class="heroTitle">ШЛЯХ КОНДИТЕРА<br>ВІД 0 ДО 140 000₴</h1>
+        <p class="heroSub">
+          Більше робити ≠ більше заробляти. Ви дізнаєтесь, що робити у 2026 році,
+          щоб за ваші торти хотіли замовити, і отримаєте готову стратегію.
+        </p>
 
-              <div class="hr"></div>
-
-              <p style="color:var(--muted)">
-                Для кондитерів України: новачок, у наймі або підприємець. Якщо ваша ціль: підняти чек,
-                зробити солдаут і заробляти стабільно, ця лекція для вас.
-              </p>
-            </div>
-          </div>
-
-          <div class="heroMedia">
-            <img src="assets/hero.jpg" alt="Hero image">
-          </div>
+        <div class="meta">
+          <span class="tag">13 січня • 19:00 (Київ)</span>
+          <span class="tag">2–2,5 години</span>
+          <span class="tag">Запис 14 днів</span>
+          <span class="tag">Трафік з Instagram</span>
         </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="kicker">ВІЗУАЛ</div>
-          <h2>Приклади стилю</h2>
-          <p>Замініть фото в assets на свої і сторінка одразу буде в її естетиці.</p>
-
-          <div class="grid3">
-            <div class="photo"><img src="assets/pic1.jpg" alt="Visual 1"></div>
-            <div class="photo"><img src="assets/pic2.jpg" alt="Visual 2"></div>
-            <div class="photo"><img src="assets/pic3.jpg" alt="Visual 3"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container split">
-          <div class="card pad">
-            <div class="kicker">В РЕЗУЛЬТАТІ</div>
-            <h2>Після лекції ви</h2>
-
-            <div class="list">
-              <div class="item">
-                <b>Зрозумієте тренди 2026</b>
-                <p>і як адаптувати їх під ваш бренд, щоб бути “в топі”.</p>
-              </div>
-              <div class="item">
-                <b>Приберете критичні помилки</b>
-                <p>які забирають час, але не дають грошей.</p>
-              </div>
-              <div class="item">
-                <b>Отримаєте чіткий алгоритм продажів</b>
-                <p>від уваги до заявки та повторного замовлення.</p>
-              </div>
-            </div>
-
-            <div class="row" style="margin-top:16px">
-              <a class="btn btnPrimary" href="pricing.html">Перейти до оплати</a>
-              <a class="btn btnSoft" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Є питання?</a>
-            </div>
-          </div>
-
-          <div class="card pad">
-            <div class="kicker">ДЕТАЛІ</div>
-            <h2>Коли і як</h2>
-            <p>13 січня о 19:00 (за Києвом). Онлайн формат. Доступ до запису 14 днів.</p>
-
-            <div class="hr"></div>
-
-            <div class="list">
-              <div class="item"><b>Трафік</b><p>Основний потік з Instagram.</p></div>
-              <div class="item"><b>Оплата</b><p>Через кнопку на сайті.</p></div>
-              <div class="item"><b>Матеріали</b><p>Конспект та бонуси після реєстрації.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footerInner">
-        <div>
-          <b>DANIELA • Online Lecture</b>
-          <small>© 2026 • Україна • Усі права захищено</small>
-        </div>
-        <div class="footerLinks">
-          <a href="program.html">Програма</a>
-          <a href="pricing.html">Оплата</a>
-          <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
-          <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
+        <div class="row">
+          <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити 99 грн</a>
+          <a class="btn" href="program.html">Дивитись програму</a>
+          <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ABOUT (from doc) -->
+    <section class="section">
+      <div class="container split">
+        <div class="card pad">
+          <div class="kicker">ДЛЯ КОГО</div>
+          <h2>Вам потрібна лекція, якщо ви</h2>
+          <p>
+            Кондитер-новачок, кондитер у наймі або кондитер-підприємець.
+            Якщо ваша ціль: монетизувати хобі, впорядкувати процеси, підняти чек і
+            заробляти так, щоб не думати про іншу роботу.
+          </p>
+
+          <div class="hr"></div>
+
+          <div class="kicker">У ПРОГРАМІ</div>
+          <p>
+            Стратегія просування та розвитку персонального бренду, критичні помилки кондитерів,
+            секрети нового покоління успішних кондитерів, бонуси та живі розбори учасників.
+          </p>
+        </div>
+
+        <div class="card pad">
+          <div class="kicker">РЕЗУЛЬТАТ</div>
+          <h2>Після лекції ви</h2>
+          <p>
+            Освоїте тренди 2026 року, зрозумієте як виділятися, дізнаєтесь які помилки
+            заважають продажам, і як невеликі зміни в процесах економлять час та збільшують дохід.
+          </p>
+
+          <div class="row">
+            <a class="btn btnGold" href="pricing.html">Перейти до оплати</a>
+            <a class="btn" href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section">
+      <div class="container">
+        <div class="kicker">ГАЛЕРЕЯ</div>
+        <h2>Візуальний стиль</h2>
+        <p>3 фото, акуратно адаптовані під телефон. Не відкриваються, просто красиво стоять.</p>
+
+        <div class="grid3">
+          <div class="photo"><img src="assets/pic1.jpg" alt="Gallery 1"></div>
+          <div class="photo"><img src="assets/pic2.jpg" alt="Gallery 2"></div>
+          <div class="photo"><img src="assets/pic3.jpg" alt="Gallery 3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE DOC CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="card pad">
+          <div class="kicker">ЯК ВЗЯТИ УЧАСТЬ</div>
+          <h2>3 кроки</h2>
+          <p>
+            1) Перейдіть в телеграм-бот. 2) Натисніть “Старт” і дотримуйтесь інструкції.
+            3) Оплатіть 99 грн через кнопку і одразу отримайте доступ до каналу інтенсиву.
+          </p>
+
+          <div class="hr"></div>
+
+          <div class="kicker">ЗАПИС</div>
+          <p>Якщо не зможете бути онлайн, буде запис з доступом на 14 днів.</p>
+
+          <div class="row">
+            <a class="btn btnGold" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
+            <a class="btn" href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Підтримка</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerInner">
+      <div>
+        <b>DANIELA • ONLINE LECTURE</b>
+        <small>© 2026 • Україна • Усі права захищено</small>
+      </div>
+      <div class="footerLinks">
+        <a href="program.html">Програма</a>
+        <a href="pricing.html">Оплата</a>
+        <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener">Instagram</a>
+        <a href="YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
