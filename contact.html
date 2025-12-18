@@ -3,11 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Контакти — Онлайн лекція</title>
-  <meta name="description" content="Контакти та підтримка: Telegram/Instagram." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <title>Контакти — Daniella</title>
+  <meta name="description" content="Підтримка і контакти для лекції." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -16,90 +13,107 @@
   <label class="dimmer" for="navToggle" aria-hidden="true"></label>
 
   <aside class="drawer" aria-label="Menu">
-    <div class="drawer-top">
-      <div class="drawer-brand">
-        <span class="mark">●</span>
-        <div><div class="bname">DANIELA</div><div class="bsub">online lecture • 2026</div></div>
+    <div class="drawerTop">
+      <div class="drawerBrand">
+        <div class="brandMark"></div>
+        <div class="brandText">
+          <div class="name">DANIELA</div>
+          <div class="sub">visual lecture • 2026</div>
+        </div>
       </div>
-      <label class="drawer-close" for="navToggle" aria-label="Close menu">✕</label>
+      <label class="drawerClose" for="navToggle" aria-label="Close">✕</label>
     </div>
-    <nav class="drawer-links">
+
+    <nav class="drawerNav">
       <a href="index.html">Головна</a>
       <a href="program.html">Програма</a>
       <a href="pricing.html">Ціна</a>
       <a href="contact.html">Контакти</a>
     </nav>
-    <div class="drawer-cta">
-      <a class="btn primary" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Оплатити</a>
-      <a class="btn ghost" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
-    </div>
-    <div class="drawer-mini">
-      <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Support</a>
+
+    <div class="drawerCTA">
+      <a class="btn btnHot" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Придбати доступ</a>
+      <a class="btn" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram</a>
     </div>
   </aside>
 
   <header class="top">
-    <div class="wrap top-inner">
-      <label class="menu-btn" for="navToggle" aria-label="Open menu">
-        <span class="menu-dot"></span><span class="menu-dot"></span><span class="menu-dot"></span>
+    <div class="wrap topInner">
+      <label class="menuBtn" for="navToggle" aria-label="Menu">
+        <span class="menuDot"></span><span class="menuDot"></span><span class="menuDot"></span>
       </label>
-      <a class="top-brand" href="index.html">
-        <span class="top-title">Контакти</span>
-        <span class="top-sub">підтримка • питання • оплата</span>
-      </a>
-      <div class="top-actions">
-        <a class="mini" href="pricing.html">₴</a>
-        <a class="mini" href="program.html">P</a>
+
+      <div class="topTitle">
+        <div class="t1">Контакти</div>
+        <div class="t2">питання • підтримка • оплата</div>
+      </div>
+
+      <div class="topActions">
+        <a class="pill" href="pricing.html">99₴</a>
+        <a class="pill" href="index.html">Home</a>
       </div>
     </div>
   </header>
 
   <main>
     <section class="section">
+      <div class="wrap grid2">
+        <div class="card pad">
+          <div class="kicker">ПІДТРИМКА</div>
+          <h1 class="h1">Напишіть нам</h1>
+          <p class="sub">Якщо є сумніви щодо вартості або оплати, ми допоможемо швидко.</p>
+
+          <div style="margin-top:14px; display:grid; gap:10px">
+            <a class="btn btnHot btnFull" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Telegram підтримка</a>
+            <a class="btn btnFull" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btnFull" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Перейти до оплати</a>
+          </div>
+
+          <p class="sub" style="margin-top:12px; color: var(--muted2)">
+            Зазвичай відповідаємо протягом дня.
+          </p>
+        </div>
+
+        <div class="poster">
+          <img src="assets/pic8.jpg" alt="Contact visual">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="wrap">
-        <div class="section-head">
-          <h1 class="h1">Є питання?</h1>
-          <p class="sub">Напишіть — і вам допоможуть швидко та людяно.</p>
-        </div>
+        <div class="card pad">
+          <div class="kicker">FAQ</div>
+          <h2 class="h2">Швидкі відповіді</h2>
 
-        <div class="split">
-          <div class="panel soft">
-            <div class="kicker">ШВИДКІ КНОПКИ</div>
-            <div style="display:grid; gap:10px; margin-top:10px">
-              <a class="btn primary btn-full" href="https://t.me/YOUR_TELEGRAM_BOT" target="_blank" rel="noopener">Написати в Telegram</a>
-              <a class="btn ghost btn-full" href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener">Написати в Instagram</a>
-              <a class="btn ghost btn-full" href="YOUR_PAYMENT_LINK" target="_blank" rel="noopener">Перейти до оплати</a>
-            </div>
-            <div class="fine">Зазвичай відповідаємо протягом дня.</div>
-          </div>
+          <div class="faq">
+            <details class="card faqItem" open>
+              <summary>Як проходить лекція?</summary>
+              <p>Онлайн. Після оплати ви отримуєте доступ та інструкцію.</p>
+            </details>
 
-          <div class="panel">
-            <div class="kicker">КОРОТКО</div>
-            <ul class="list">
-              <li>Лекція онлайн, дата: 13 січня, 19:00 (Київ)</li>
-              <li>Запис доступний 14 днів</li>
-              <li>Оплата: на сайті або через Telegram</li>
-              <li>Бонус одразу: «Конспект лекції»</li>
-            </ul>
+            <details class="card faqItem">
+              <summary>Якщо я не можу бути онлайн?</summary>
+              <p>Буде запис з доступом на 14 днів.</p>
+            </details>
 
-            <div style="margin-top:12px">
-              <a class="btn primary" href="pricing.html">Дивитись ціну</a>
-            </div>
+            <details class="card faqItem">
+              <summary>Для новачків підходить?</summary>
+              <p>Так. Ви отримаєте базу і план старту в 2026.</p>
+            </details>
           </div>
         </div>
-
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
+  <footer>
+    <div class="wrap footInner">
       <div>
-        <div class="foot-brand">DANIELA • Online Lecture</div>
-        <div class="foot-sub">© 2026 • Україна</div>
+        <div class="footBrand">DANIELA • Visual Lecture</div>
+        <div class="footSub">© 2026 • Україна</div>
       </div>
-      <div class="foot-links">
+      <div class="footLinks">
         <a href="index.html">Головна</a>
         <a href="program.html">Програма</a>
         <a href="pricing.html">Ціна</a>
