@@ -3,294 +3,515 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Онлайн лекція | Шлях кондитера від 0 до 140.000₴</title>
-  <meta name="description" content="Онлайн лекція 13 січня о 19:00. Стратегія 2026, помилки, тренди, бонуси та розбори. Реєстрація через Telegram." />
+  <title>Visual Intense — Good Creators Club</title>
+  <meta name="description" content="RESET 2026 — стратегічний інтенсив по контенту" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Topbar -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-left">
-        <span class="pill">Онлайн лекція</span>
-        <span class="topbar-text">13 січня • 19:00 (Київ)</span>
-      </div>
-      <div class="topbar-right">
-        <a class="topbar-link" href="program.html">Програма</a>
-        <a class="topbar-link" href="faq.html">FAQ</a>
-        <a class="topbar-link" href="#telegram">Telegram</a>
-      </div>
-    </div>
-  </div>
+  <!-- BG grain -->
+  <div class="grain" aria-hidden="true"></div>
 
   <!-- Header -->
   <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <div class="brand-mark">D</div>
-        <div class="brand-text">
-          <div class="brand-title">ДАНІЕЛА</div>
-          <div class="brand-subtitle">Інтенсив для кондитерів</div>
-        </div>
+    <div class="container header__inner">
+      <a class="brand" href="#">
+        <!-- Replace with your local logo file -->
+        <img class="brand__logo" src="assets/logo.svg" alt="Good Creators Club" onerror="this.style.display='none'">
+        <span class="brand__text">GoodCreators Club</span>
       </a>
 
-      <nav class="nav">
-        <a href="#about">Про лекцію</a>
-        <a href="#forwhom">Для кого</a>
-        <a href="#results">Результат</a>
-        <a href="#telegram">Реєстрація</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#forwho">Для кого</a>
+        <a href="#about">Про мене</a>
+        <a href="#benefits">benefits</a>
+        <a href="#faq">FAQ</a>
       </nav>
 
-      <a class="btn btn-primary" href="#telegram">Перейти в Telegram</a>
+      <div class="header__right">
+        <a class="icon-btn" href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <span>IG</span>
+        </a>
+        <a class="icon-btn" href="https://t.me" target="_blank" rel="noreferrer" aria-label="Telegram">
+          <span>TG</span>
+        </a>
+        <a class="icon-btn" href="https://www.youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube">
+          <span>YT</span>
+        </a>
 
-      <button class="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span class="dots" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </span>
+        </button>
+      </div>
     </div>
 
-    <div id="mobileMenu" class="mobile-menu" hidden>
-      <a href="#about">Про лекцію</a>
-      <a href="#forwhom">Для кого</a>
-      <a href="#results">Результат</a>
-      <a href="program.html">Програма</a>
-      <a href="faq.html">FAQ</a>
-      <a class="btn btn-primary mobile-cta" href="#telegram">Перейти в Telegram</a>
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" hidden>
+      <div class="drawer__panel">
+        <div class="drawer__top">
+          <span class="mono">MENU</span>
+          <button class="xbtn" id="closeDrawer" aria-label="Close menu">✕</button>
+        </div>
+        <a href="#forwho" class="drawer__link">Для кого</a>
+        <a href="#about" class="drawer__link">Про мене</a>
+        <a href="#benefits" class="drawer__link">Benefits</a>
+        <a href="#pricing" class="drawer__link">Скільки коштує?</a>
+        <a href="#faq" class="drawer__link">FAQ</a>
+
+        <div class="drawer__social">
+          <a class="pill" href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="pill" href="https://t.me" target="_blank" rel="noreferrer">Telegram</a>
+          <a class="pill" href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
+      </div>
+      <button class="drawer__backdrop" id="backdrop" aria-label="Close"></button>
     </div>
   </header>
 
-  <!-- HERO (background pic1.png) -->
-  <section class="hero hero-photo">
-    <div class="hero-overlay" aria-hidden="true"></div>
-
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          Шлях кондитера від 0 до <span class="accent">140.000₴</span>
-        </h1>
-
-        <p class="hero-subtitle">
-          Більше робити не означає більше заробляти.
-          Дізнайтесь, що робити у 2026 році, щоб ваші торти хотіли замовляти, і отримайте готову стратегію росту.
-        </p>
-
-        <div class="hero-badges">
-          <div class="badge"><div class="badge-title">Дата</div><div class="badge-value">13 січня</div></div>
-          <div class="badge"><div class="badge-title">Час</div><div class="badge-value">19:00</div></div>
-          <div class="badge"><div class="badge-title">Тривалість</div><div class="badge-value">2–2,5 години</div></div>
-          <div class="badge"><div class="badge-title">Формат</div><div class="badge-value">Telegram</div></div>
-        </div>
-
-        <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="#telegram">Зареєструватись в Telegram</a>
-          <a class="btn btn-ghost btn-lg" href="program.html">Подивитись програму</a>
-        </div>
-
-        <div class="hero-note">
-          Після реєстрації ви одразу завантажите бонусний файл: <strong>«Конспект лекції»</strong>.
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-card-body" id="price">
-          <div class="price-row">
-            <div class="price-left">
-              <div class="price-label">Реєстрація</div>
-              <div class="price-title">Спеціальна ціна</div>
-            </div>
-            <div class="price-right">
-              <div class="price-old">399 грн</div>
-              <div class="price-new">99 грн</div>
-            </div>
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="hero__meta">
+            <span class="mono">08/12</span>
+            <span class="chip">RESET</span>
           </div>
 
-          <ul class="checklist">
-            <li>Стратегія просування та персональний бренд</li>
-            <li>Критичні помилки кондитерів і як їх уникнути</li>
-            <li>Тренди 2026 та система дій до продажів</li>
-            <li>Бонуси та живі розбори учасників</li>
-          </ul>
+          <h1 class="hero__title">стратегічний інтенсив по контенту 2026</h1>
 
-          <a class="btn btn-primary btn-full" href="#telegram">Перейти в Telegram та оплатити</a>
-          <div class="microtext">Оплата і доступ автоматично через бота.</div>
+          <div class="hero__cta">
+            <a class="btn primary" href="#pricing">Зайняти місце</a>
+            <a class="btn ghost" href="#forwho">Для кого?</a>
+          </div>
+
+          <p class="hero__desc">
+            GoodCreators Club – це більше, ніж просто школа для блогерів і креаторів.
+            Це ком’юніті, що допомагає перетворити ваш лайфстайл на джерело натхнення,
+            фінансової незалежності та творчої реалізації.
+          </p>
+
+          <div class="hero__badges">
+            <span class="tag">digital courses</span>
+            <span class="tag">visual intensives</span>
+            <span class="tag">content creation</span>
+            <span class="tag">social media</span>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <!-- Replace with the same hero image style (portrait / editorial) -->
+          <div class="hero__img" role="img" aria-label="Hero image"></div>
+
+          <div class="hero__float">
+            <div class="mono small">Старт скоро</div>
+            <div class="float__row">
+              <span class="dot"></span>
+              <span>7 днів</span>
+              <span class="sep">•</span>
+              <span>Telegram + Zoom</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- WHITE separator after hero -->
-  <section class="white-break"></section>
+      <!-- Marquee strip -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+        </div>
+      </div>
+    </section>
 
-  <!-- About (dark) -->
-  <section id="about" class="section section-dark">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="h2">Поки у інших низький чек і немає замовлень</h2>
-        <p class="p">
-          Ви отримаєте карту дій на 2026 рік, щоб вас помічали, довіряли вам і хотіли замовляти саме у вас.
-        </p>
+    <!-- For who -->
+    <section class="section" id="forwho">
+      <div class="container">
+        <div class="section__head">
+          <h2>Для кого?</h2>
+          <p class="muted">Цей інтенсив для тебе, якщо ти:</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">✶</div>
+            <p>хочеш скласти контент-стратегію просування на 2026 рік і мати чіткий план дій</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">✶</div>
+            <p>потребуєш свіжого погляду, нових ідей та натхнення, щоб створювати</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">✶</div>
+            <p>прагнеш зробити профіль більш професійним і привабливим для брендів</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">✶</div>
+            <p>хочеш розібрати, який контент приносить кращі результати</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">✶</div>
+            <p>шукаєш ком’юніті, підтримку та зворотній зв’язок</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">✶</div>
+            <p>хочеш опанувати практичні навички та отримати перші результати</p>
+          </article>
+        </div>
       </div>
 
-      <div class="cards-3">
-        <article class="card">
-          <div class="icon">📌</div>
-          <h3>Персональний бренд</h3>
-          <p>Як упакувати себе так, щоб за ваш стиль платили більше.</p>
-        </article>
-        <article class="card">
-          <div class="icon">⚠️</div>
-          <h3>Помилки</h3>
-          <p>Що вбиває продажі, навіть якщо ви готуєте ідеально.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🧩</div>
-          <h3>Система</h3>
-          <p>6 кроків, які приводять до замовлень без життя на кухні.</p>
-        </article>
+      <div class="marquee alt" aria-hidden="true">
+        <div class="marquee__track">
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- WHITE background section -->
-  <section class="section section-white" id="forwhom">
-    <div class="container">
-      <div class="split">
+    <!-- About + carousel -->
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div class="panel">
+          <div class="mono small">1 / 12</div>
+          <h2>Авторка інтенсиву:</h2>
+          <p class="lead">Анастасія Бистрієвська — інфлюєнсерка, модель, UGC-креаторка</p>
+
+          <ul class="list">
+            <li>Експертка зі створення контенту</li>
+            <li>Фаундерка школи Good Creators Club</li>
+            <li>1000+ успішних колаборацій з брендами</li>
+          </ul>
+
+          <a class="btn ghost" href="#pricing">Скільки коштує?</a>
+        </div>
+
+        <div class="carousel" aria-label="Brands carousel">
+          <div class="carousel__track">
+            <!-- Put your brand logos here -->
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+            <div class="logo-tile"></div>
+          </div>
+          <div class="carousel__hint mono">гортай →</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker">цінність</span>
+          <h2>Що ти отримаєш:</h2>
+        </div>
+
+        <div class="benefits">
+          <article class="benefit">
+            <h3>Контент-стратегія на 2026</h3>
+            <p class="muted">Чітка система, що робити, що знімати, як пакувати, як просувати.</p>
+          </article>
+          <article class="benefit">
+            <h3>Практика з фокусом на результат</h3>
+            <p class="muted">Завдання, які рухають профіль до монетизації.</p>
+          </article>
+          <article class="benefit">
+            <h3>Ком’юніті + підтримка</h3>
+            <p class="muted">Закритий чат, обмін досвідом та розбори типових кейсів.</p>
+          </article>
+          <article class="benefit">
+            <h3>Q&A сесія</h3>
+            <p class="muted">Відповіді, уточнення, розбір ситуацій учасників.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Результати учасників</h2>
+          <p class="muted">Скріни, фідбек, кейси. Додай свої зображення в плитки нижче.</p>
+        </div>
+
+        <div class="grid12">
+          <div class="tile tall"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile wide"></div>
+          <div class="tile"></div>
+          <div class="tile tall"></div>
+          <div class="tile"></div>
+          <div class="tile wide"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile tall"></div>
+          <div class="tile"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container pricing">
+        <div class="pricing__top">
+          <h2>Скільки коштує?</h2>
+          <a class="btn primary" href="#buy">Зайняти місце</a>
+        </div>
+
+        <div class="countdown">
+          <div class="countdown__label">Підвищення ціни через:</div>
+          <div class="countdown__grid" role="timer" aria-live="polite">
+            <div class="timebox">
+              <div class="timebox__num" id="d">0</div>
+              <div class="timebox__lab">Днів</div>
+            </div>
+            <div class="timebox">
+              <div class="timebox__num" id="h">0</div>
+              <div class="timebox__lab">годин</div>
+            </div>
+            <div class="timebox">
+              <div class="timebox__num" id="m">0</div>
+              <div class="timebox__lab">хвилин</div>
+            </div>
+            <div class="timebox">
+              <div class="timebox__num" id="s">0</div>
+              <div class="timebox__lab">секунд</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-cards" id="buy">
+          <article class="price-card">
+            <div class="price-card__head">
+              <h3>З куратором</h3>
+              <span class="pill">кількість місць — всього 35</span>
+            </div>
+
+            <ul class="list">
+              <li>7 стратегічних уроків</li>
+              <li>практичні завдання з фокусом на результат</li>
+              <li>закритий ком’юніті-чат</li>
+              <li>Q&A сесія</li>
+              <li>бонуси та подарунки</li>
+              <li>доступ на 3 місяці</li>
+            </ul>
+
+            <div class="addon">
+              <div class="addon__title">А ТАКОЖ</div>
+              <div class="addon__body">
+                <div class="addon__badge">Лекція запрошеної спікерки</div>
+                <div class="addon__text">“Як інтегрувати AI у створення контенту у 2026”</div>
+              </div>
+            </div>
+
+            <div class="price-card__bottom">
+              <div class="price">
+                <span class="price__now">3 200 грн</span>
+                <span class="price__old">3 200 грн</span>
+              </div>
+
+              <!-- Replace with your payment link -->
+              <a class="btn primary full" href="https://secure.wayforpay.com" target="_blank" rel="noreferrer">
+                Придбати
+              </a>
+
+              <div class="note muted">Після оплати ти отримаєш доступ до чату.</div>
+            </div>
+          </article>
+
+          <aside class="approach-card">
+            <h3>Мій підхід</h3>
+            <p class="lead">
+              бізнесовість + креативність. Для мене бізнес-стратегія не працює без креативного мислення і навпаки.
+            </p>
+
+            <p class="muted">
+              Мій авторський підхід проводить з точки А в точку Б — з точки «нічого не понятно»
+              до «вау, мені погодили першу співпрацю».
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat__num">10 років</div>
+                <div class="stat__lab">Працюю з брендами</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">2000+</div>
+                <div class="stat__lab">Учнів пройшло курс</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="marquee alt" aria-hidden="true">
+        <div class="marquee__track">
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+          <span>digital courses / visual intensives / lectures / content creation / social media development / creativity / events / inspiration / self improvement /</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="muted">Натисни на питання, щоб розгорнути відповідь.</p>
+        </div>
+
+        <div class="faq">
+          <details class="qa">
+            <summary>Чи буде фідбек на мої завдання?</summary>
+            <div class="qa__a">
+              Формат передбачає загальний фідбек у чаті та розбір типових кейсів на Q&A-сесії.
+              Найактивніші учасниці можуть потрапити на особистий розбір та отримати бонуси.
+            </div>
+          </details>
+
+          <details class="qa">
+            <summary>Чи підійде мені інтенсив, якщо я в іншій сфері, але хочу вести блог?</summary>
+            <div class="qa__a">
+              Так. RESET 2026 — це не тільки про блогерство, а про особистий бренд і презентацію себе онлайн.
+              Підійде експерткам, підприємницям, фрілансерам.
+            </div>
+          </details>
+
+          <details class="qa">
+            <summary>Коли початок і як усе буде проходити?</summary>
+            <div class="qa__a">
+              Після оплати ти отримаєш доступ до закритого чату.
+              Інтенсив триває 7 днів, уроки та завдання в Telegram, Q&A — у Zoom.
+            </div>
+          </details>
+
+          <details class="qa">
+            <summary>Скільки часу буде доступ до матеріалів?</summary>
+            <div class="qa__a">
+              Доступ 3 місяці. Можна повертатися до лекцій у будь-який момент, оновлювати та вдосконалювати завдання.
+              Чат також буде доступний увесь цей час.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__grid">
         <div>
-          <h2 class="h2 dark">Вам потрібен інтенсив, якщо ви</h2>
-          <p class="p dark-muted">Вже заробляєте або тільки плануєте заробляти на тортах.</p>
+          <div class="footer__brand">GoodCreators Club</div>
+          <p class="muted">digital courses / visual intensives / lectures</p>
 
-          <div class="chips light">
-            <span class="chip light">Кондитер новачок</span>
-            <span class="chip light">Кондитер у наймі</span>
-            <span class="chip light">Кондитер підприємець</span>
-          </div>
-
-          <h3 class="h3 dark">Цілі</h3>
-          <ul class="bullets dark-muted">
-            <li>Монетизувати своє хобі</li>
-            <li>Стати лідером ринку</li>
-            <li>Впорядкувати процеси і заробляти більше</li>
-            <li>Зробити солдаут через свою унікальність</li>
-          </ul>
-
-          <a class="btn btn-primary" href="#telegram">Займайте своє місце</a>
-        </div>
-
-        <div class="white-card">
-          <div class="white-card-top">
-            <div class="white-kicker">Бонус одразу</div>
-            <div class="white-title">«Конспект лекції»</div>
-            <div class="white-text">Готова структура, щоб ви не губили головне.</div>
-          </div>
-          <div class="white-card-bottom">
-            <div class="mini lightbox">
-              <div class="mini-title dark">Бонус онлайн</div>
-              <div class="mini-text dark-muted">Рецепт ваніль&ягоди + гайд по насадкам (ламбет)</div>
-            </div>
-            <div class="mini lightbox">
-              <div class="mini-title dark">Запис</div>
-              <div class="mini-text dark-muted">Доступ 14 днів</div>
-            </div>
+          <div class="footer__social">
+            <a class="pill" href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="pill" href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+            <a class="pill" href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- WHITE break -->
-  <section class="white-break"></section>
-
-  <!-- Results (dark) -->
-  <section id="results" class="section section-dark">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="h2">В результаті за лекцію ви</h2>
-        <p class="p">Зберете ясність, структуру і інструменти, які економлять час і підсилюють продажі.</p>
-      </div>
-
-      <div class="cards-2">
-        <article class="card card-wide">
-          <h3>Розуміння трендів</h3>
-          <ul class="checklist">
-            <li>Зрозумієте тренди 2026 і як виділятися</li>
-            <li>Побачите, що зупиняє ріст і як це прибрати</li>
-            <li>Дізнаєтесь, як заробляти через блог</li>
-          </ul>
-        </article>
-
-        <article class="card card-wide">
-          <h3>Система та бонуси</h3>
-          <ul class="checklist">
-            <li>Зрозумієте критичні помилки і рішення</li>
-            <li>Отримаєте зміни в процесах, що економлять час</li>
-            <li>Кращі умови на курс + додаткові бонуси</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHITE section: CTA -->
-  <section class="section section-white" id="telegram">
-    <div class="container">
-      <div class="cta-white">
-        <div>
-          <h2 class="h2 dark">Реєстрація в один клік</h2>
-          <p class="p dark-muted">Перейдіть у Telegram-бот, натисніть Старт, оплатіть 99 грн і одразу отримайте доступ.</p>
+        <div class="footer__links">
+          <a href="#">Правила користування</a>
+          <a href="#">Договір оферта</a>
+          <a href="#">Privacy Policy</a>
+          <a href="https://t.me" target="_blank" rel="noreferrer">команда турботи</a>
         </div>
-
-        <!-- Replace Telegram link -->
-        <a class="btn btn-primary btn-lg" href="https://t.me/your_bot_or_channel" target="_blank" rel="noopener">
-          Відкрити Telegram
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="footer-brand">
-          <span class="brand-mark small">D</span>
-          <div>
-            <div class="footer-title">Даніела Денисівна</div>
-            <div class="footer-sub">Онлайн лекція для кондитерів • 2026 стратегія</div>
-          </div>
-        </div>
-        <div class="footer-copy">© <span id="year"></span> Всі права захищені</div>
       </div>
 
-      <div class="footer-right">
-        <a class="footer-link" href="program.html">Програма</a>
-        <a class="footer-link" href="faq.html">FAQ</a>
-        <a class="btn btn-ghost" href="#telegram">Telegram</a>
+      <div class="footer__bottom mono">
+        <span>© <span id="yr"></span> GoodCreators Club</span>
+        <span class="muted">made in a clean, editorial style</span>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </main>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Year
+    document.getElementById("yr").textContent = new Date().getFullYear();
 
-    const burger = document.querySelector(".burger");
-    const menu = document.getElementById("mobileMenu");
+    // Mobile drawer
+    const btn = document.getElementById("menuBtn");
+    const drawer = document.getElementById("drawer");
+    const close = document.getElementById("closeDrawer");
+    const backdrop = document.getElementById("backdrop");
 
-    burger.addEventListener("click", () => {
-      const isOpen = burger.getAttribute("aria-expanded") === "true";
-      burger.setAttribute("aria-expanded", String(!isOpen));
-      if (menu.hasAttribute("hidden")) menu.removeAttribute("hidden");
-      else menu.setAttribute("hidden", "");
+    function openDrawer() {
+      drawer.hidden = false;
+      requestAnimationFrame(() => drawer.classList.add("is-open"));
+      btn.setAttribute("aria-expanded", "true");
+      document.body.classList.add("no-scroll");
+    }
+    function closeDrawer() {
+      drawer.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("no-scroll");
+      setTimeout(() => (drawer.hidden = true), 180);
+    }
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      expanded ? closeDrawer() : openDrawer();
     });
+    close.addEventListener("click", closeDrawer);
+    backdrop.addEventListener("click", closeDrawer);
+    drawer.querySelectorAll("a").forEach(a => a.addEventListener("click", closeDrawer));
 
-    menu.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => {
-        burger.setAttribute("aria-expanded", "false");
-        menu.setAttribute("hidden", "");
-      });
-    });
+    // Countdown (set target date here)
+    // Tip: change this to your real "price increase" deadline
+    const target = new Date(Date.now() + 5 * 24 * 60 * 60 * 1000 + 3 * 60 * 60 * 1000); // +5 days +3 hours
+
+    const elD = document.getElementById("d");
+    const elH = document.getElementById("h");
+    const elM = document.getElementById("m");
+    const elS = document.getElementById("s");
+
+    function tick() {
+      const now = new Date();
+      let diff = Math.max(0, target - now);
+
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      diff -= d * (1000 * 60 * 60 * 24);
+      const h = Math.floor(diff / (1000 * 60 * 60));
+      diff -= h * (1000 * 60 * 60);
+      const m = Math.floor(diff / (1000 * 60));
+      diff -= m * (1000 * 60);
+      const s = Math.floor(diff / 1000);
+
+      elD.textContent = d;
+      elH.textContent = h;
+      elM.textContent = m;
+      elS.textContent = s;
+    }
+    tick();
+    setInterval(tick, 1000);
   </script>
 </body>
 </html>
